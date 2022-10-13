@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +86,8 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 SITE_ID = 1
+
+CSRF_TRUSTED_ORIGINS = ['https://pavithraveera-lifestyle-cpzkn47p8jz.ws-eu71.gitpod.io/']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
