@@ -16,9 +16,6 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-    from django.shortcuts import render
-from .models import Product
-
 
 def product_detail(request, product_id):
 
@@ -31,4 +28,3 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
-
