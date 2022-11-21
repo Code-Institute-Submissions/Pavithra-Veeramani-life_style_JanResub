@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
+
+    #Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +62,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'life_style.urls'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
