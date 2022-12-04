@@ -68,11 +68,11 @@ class StripeWH_Handler:
                 profile = UserProfile.objects.get(user_username=username)
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
-                profile.default_ default_postcode = shipping_details.address.postal_code
+                profile.default_default_postcode = shipping_details.address.postal_code
                 profile.default_town_or_city = shipping_details.address.city
                 profile.default_street_address1 = shipping_details.address.line
                 profile.default_street_address2 = shipping_details.address.line2
-                profile.default_ profile.default_county = shipping_details.address.state
+                profile.default_profile.default_county = shipping_details.address.state
                 profile.save()
 
         order_exists = False
