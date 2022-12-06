@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-gpzwy6ux3f3s4-#6ydm+n%^vcxy#=j+z$ual#l9scli++p#6x@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['life-style.heroku.com', 'localhost']
 
 
 # Application definition
