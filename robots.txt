@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Sitemap:  https://life-style1.herokuapp.com/sitemap.xml
