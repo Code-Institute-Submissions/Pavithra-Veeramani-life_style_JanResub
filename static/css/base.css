@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Roboto:wght@300&display=swap");
+
+
 html {
     height: 100%;
 }
 body {
-    background: url('/media/living_2.jpg') no-repeat center center fixed;
+    background: url('/media/living-room-3.jpg') no-repeat center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Quicksand';
+    font-family: 'Montserrat';
+}
+
+.nav-bottom {
+    border-bottom: 1px solid grey;
 }
 /* from Bulma */
 .icon {
