@@ -1,1 +1,1 @@
-web: gunicorn life_style.wsgi:application
+web: gunicorn life_style1.wsgi:application
