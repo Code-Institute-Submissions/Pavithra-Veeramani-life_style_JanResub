@@ -27,5 +27,6 @@ urlpatterns = [
     path('cart/', include('cart.urls')),
     path('checkout/', include('checkout.urls')),
     path('profiles/', include('profiles.urls')),
+    path('brands/', include('brands.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'life_style.views.handler404'

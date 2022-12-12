@@ -8,6 +8,7 @@
           "description":"This Diva rug is an essential addition to the home. Its classic pattern and striking design makes it perfect for any room.",
           "price":53.99,
           "category":1,
+          "brand":1,
           "rating":4.6,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"diva_rug.jpg"
@@ -22,6 +23,7 @@
           "description":"Jazz up any room in your house with this Dorothy Pendant. The Dorothy Pendant is fun and colourful and will be sure to spruce up any room.",
           "price":29.99,
           "category":1,
+          "brand":1,
           "rating":4.6,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"dorothy_pendant.jpg"
@@ -36,6 +38,7 @@
           "description":"The Sabichi Milano Oval Mirror adds elegance to your bathroom. The Milano bathroom ware range has a beautiful chrome finish. The elegant looking glass mirror will leave your bathroom looking stylish and sophisticated!",
           "price":35.99,
           "category":1,
+          "brand":2,
           "rating":4.7,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"milano_oval_mirror.jpg"
@@ -50,6 +53,7 @@
           "description":" The elegant design will add a modern touch to your home's décor! Features a trendy and ultra-modern design that's full of character. This clock will not only show the time, but it also adds a nice touch to your decor and is an excellent addition to any wall. The construction features a stylish frame that is sure to fit in with any home décor. Great for hanging in any room or hallway. This item is fragile and must be handled with care. Requires AA batteries not included.",
           "price":25.99,
           "category":2,
+          "brand":3,
           "rating":3.0,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"farrington_clock.png"
@@ -64,6 +68,7 @@
           "description":"Bring some glamour and light to your home with this stylish Antique Brass Twists Metal Lamp. Use this elegant lamp to light up dark corners of your home. The Antique Brass Twist design is eye catching and gives the lamp a classic look. Perfect bedside or for reading this lamp is suitable anywhere in the house.",
           "price":36.99,
           "category":2,
+          "brand":2,
           "rating":5.0,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"table_lamp.png"
@@ -78,6 +83,7 @@
           "description":"Put your flowers in a beautiful display with this Ravenhead Bullet Vase. Ideal for creating a centrepiece in any room or on the dining table.",
           "price":17.99,
           "category":2,
+          "brand":3,
           "rating":4.7,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"vase.jpg"
@@ -92,6 +98,7 @@
           "description":"Dine in style with this Blue Orchid 16-piece dinner set crafted from quality porcelain boasting a beautiful floral design. Perfect for both formal and informal occasions, this dinner set is excellent for breakfast, lunch or dinner.",
           "price":39.0,
           "category":3,
+          "brand":3,
           "rating":4.4,
           "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
           "image":"dinner_sets.jpg"
@@ -106,6 +113,7 @@
           "description":"Apollo Rubberwood Salad Bowl makes delicious salads for all the family to enjoy. Carry your salads from the worktop to the table in style with this stylish and rustic salad bowl. Sure to come in handy in everyone's home!",
           "price":16.99,
           "category":3,
+          "brand":1,
           "rating":4.5,
           "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
           "image":"fruit_basket.jpg"
@@ -120,6 +128,7 @@
           "description":"Set the table in style with this Tea Cup & Saucer from Abney & Croft. The classic white design will match any kitchen decor and table setting. This tea cup & saucer was made for everyday use and is great for a catch-up with friends over tea.",
           "price":35.0,
           "category":3,
+          "brand":2,
           "rating":4.7,
           "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
           "image":"tea_set.jpg"

@@ -12,6 +12,10 @@ body {
     font-family: 'Montserrat';
 }
 
+.no-link {
+    text-decoration: none;
+}
+
 .page-bg {
     background: url('/media/living-room-3.jpg') no-repeat center;
     position: relative;

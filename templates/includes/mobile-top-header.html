@@ -18,7 +18,14 @@
                 </div>
             </div>
         </form>
-    </div>
+    
+<li class="list-inline-item dropdown">
+    <a class="text-black nav-link d-block d-lg-none" href="{% url 'products' %}" id="user-wishlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="text-center">
+            <div><i class="fas fa-heart fa-lg"></i></div>
+            <p class="my-0">Wishlist</p>
+        </div>
+    </a>
 </li>
 <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +48,8 @@
     </div>
 </li>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">        <div class="text-center">
+    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
+        <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
             <p class="my-0">
                 {% if grand_total %}

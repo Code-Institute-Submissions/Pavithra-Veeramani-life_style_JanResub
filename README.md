@@ -1,108 +1,132 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# LifeStyle
+LifeStyle is a ecommerce website which offers different varieties of home decor products.
 
-Welcome Pavithra-Veeramani,
+At LifeStyle we specialise in providing all aspects of homewares and want to make homewares as accessible and affordable as possible. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+LifeStyle have a great range of homewares and products, with many beautiful ornaments and items of home décor, and you’re sure to find something beautiful. We have homewares that can suit any home, and we always want to make your home more beautiful and somewhere special that is truly your own.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
 
-## Gitpod Reminders
+1. [User Experience (UX)](#user-experience-ux)
+    1. [Strategy](#strategy)
+        1. [Project Goals](#project-goals)
+        2. [User Goals](#user-goals)
+        3. [Strategy Table](#strategy-table)
+    2. [Scope](#scope)
+        1. [User Stories](#user-stories)
+    3. [Structure](#structure)
+        1. [Database Model](#database-model)
+    4. [Skeleton](#skeleton)
+        1. [Wireframes](#wireframes)
+    5. [Surface](#surface)
+        1. [Color Scheme](#color-scheme)
+        2. [Typography](#typography)
+2. [Marketing](#marketing)
+   1. [Search Engine Optimisation](#search-engine-optimisation)
+   2. [Business Model](#business-model)
+3. [Features](#features)
+   1. [General](#general)
+   2. [Home Page](#home-page)
+   3. [Products Page](#products-page)
+   4. [Product Details Page](#product-details-page)
+   5. [Products Admin](#products-admin)
+   5. [Shopping Bag Page](#shopping-bag-page)
+   6. [Checkout Page](#checkout-page)
+   7. [Checkout Success Page](#checkout-success-page)
+   8. [Profile Page](#profile-page)
+   9. [Favorites Page](#favorites-page)
+   10. [Reviews Page](#reviews-page)
+   11. [Reviews Admin](#reviews-admin)
+   12. [Organizations Page](#organizations-page)
+   13. [Accounts Pages](#accounts-pages)
+   14. [404 Error Page](#404-error-page)
+4. [Technologies Used](#technologies-used)
+    1. [Languages Used](#languages-used)
+    2. [Libraries and Frameworks](#languages-and-frameworks)
+    3. [Packages / Dependencies Installed](#packages--dependencies-installed)
+    4. [Database Management](#database-management)
+    5. [Payment Service](#payment-service)
+    6. [Cloud Storage](#cloud-storage)
+    7. [Tools and Programs](#tools-and-programs)
+5. [Testing](#testing)
+    1. [Go to TESTING.md](https://github.com/josswe26/noplast/blob/main/TESTING.md#noplast-testing)
+6. [Deployment](#deployment)
+    1. [How To Use This Project](#how-to-use-this-project)  
+    2. [Deployment to Heroku](#deployment-to-heroku)   
+    3. [AWS Bucket Creation](#aws-bucket-creation)  
+    4. [Connect Django to AWS Bucket](#connect-django-to-aws-bucket)
+7. [Finished Product](#finished-product)
+8. [Credits](#credits)
+9. [Known Bugs](#known-bugs)
+10. [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+***
 
-`python3 -m http.server`
+## User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+### Strategy
 
-Another blue button should appear to click: _Open Browser_.
+#### Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Responsive design to make the website accessible on different screen sizes.
 
-A blue button should appear to click: _Make Public_,
+* Structure is easy to understand and navigates effortlessly for an easy shopping experience.
 
-Another blue button should appear to click: _Open Browser_.
+* The website desing and colors are appealing to the customers.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Customers are offered the opportunity to register an account.
 
-To log into the Heroku toolbelt CLI:
+* Easy shopping process to create a pleaseant experince for the customer.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### User Goals
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+**Shopping Experience**
 
-------
+* As a shopper, I want to easily find the products and their details.
 
-## Release History
+* As a shopper, I want to view products on a specific category.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* As a shopper, I want to be able to sort the products depending on their price, rating or category.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* As a shopper, I want to be able to search for products using specific keywords.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* As a shopper, I want to easily select the quantity of products to be purchased.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* As a shopper, I want to easily view the current purchase amount.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+**Shopping Bag and Checkout**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* As a shopper, I want to view all items currently on my shopping bag and be able to update them.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* As a shopper, I want to easily provide my shipping and payment information during the checkout.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* As a shopper, I want to feel my personal and payment data is being handled securely.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* As a shopper, I want to receive an order confirmation once I have finished my purchase.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* As a shopper, I want to receive an order confirmation email for my records.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+**User Accounts**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* As a frequent shopper, I want to be able to register an account using my email address to be able to keep my records and interact with the website.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* As a frequent shopper, I want to receive a confirmation once my account has been registered to make sure the information entered was correctly.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* As a registered shopper, I want to easily log in and out from my account.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* As a registered shopper, I want to be able to recover access to my account in case I forget my password.
 
-------
+* As a registered shopper, I want to have a personalized profile page where I can keep my contact information updated and see my past orders.
 
-## FAQ about the uptime script
+**Product Admin**
 
-**Why have you added this script?**
+* As a site admin, I want to be able to add and update products.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* As a site admin, I want to be able to remove product no longer available.
 
-**How will this affect me?**
+**Newsletter Subscription**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+#### Strategy Table#
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!

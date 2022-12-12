@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Brand
 from .forms import ProductForm
 
 
@@ -15,6 +15,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    brands = None
     sort = None
     order = None
 
@@ -36,7 +37,10 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-
+        if 'brand' in request.GET:
+            brands = request.GET['brand'].split(',')
+            products = products.filter(brand__name__in=brands)
+            brands = Brand.objects.filter(name__in=brands)
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:

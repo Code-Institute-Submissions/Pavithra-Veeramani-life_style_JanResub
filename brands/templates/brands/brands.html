@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+            <ul class="list-group">
+                {% for brand in brands %}
+                    <div class="card h-100 border-0">
+                        <a class="no-link" href="/products?brand={{brand.name}}">
+                            <li class="list-group-item">{{ brand.name}}</li>
+                        </a>
+                    </div>
+                {% endfor %}
+            </ul>
+    </div>
+{% endblock %}

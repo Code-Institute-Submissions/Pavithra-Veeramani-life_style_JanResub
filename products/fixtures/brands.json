@@ -1,0 +1,27 @@
+[
+    {
+       "pk":1,
+       "model":"products.brand",
+       "fields":{
+          "name":"DFX",
+          "friendly_name":"DFX"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.brand",
+       "fields":{
+          "name":"Harveynewman",
+          "friendly_name":"Harvey Newman"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.brand",
+       "fields":{
+          "name":"Range",
+          "friendly_name":"Range"
+       }
+    }
+    
+ ]
