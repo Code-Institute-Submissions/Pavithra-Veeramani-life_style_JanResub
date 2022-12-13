@@ -12,15 +12,15 @@ body {
     font-family: 'Montserrat';
 }
 .bg-banner{
-    background-color: #023047;
+    background-color: #2A9D8F;
     }
 
 .border-search{
-        border: 1px solid #023047 !important;
+        border: 1px solid #2A9D8F !important;
     }
 
 .text-header{
-    color: #023047 !important;
+    color: #2A9D8F !important;
 }
 
 .no-link {
@@ -37,7 +37,7 @@ body {
 }
 footer {
     bottom: 0;
-    background-color: #023047;
+    background-color: #2A9D8F;
     width: 100%;
     position: fixed;
 }
