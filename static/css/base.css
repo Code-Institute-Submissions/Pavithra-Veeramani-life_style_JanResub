@@ -35,12 +35,12 @@ body {
     background-size: cover;
     padding: 1em;
 }
-footer {
+/* footer {
     bottom: 0;
     background-color: #2A9D8F;
     width: 100%;
     position: fixed;
-}
+} */
 
 .nav-bottom {
     border-bottom: 1px solid grey;
@@ -63,13 +63,13 @@ footer {
 }
 
 .shop-now-button {
-    background: #219EBC;
+    background: #e9c46a;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: #219ebc;
+    background: #e9c46a;
     color: white;
 }
 
@@ -83,7 +83,7 @@ footer {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #219EBC;
+    background: #e9c46a;
     color: white !important;
 }
 
@@ -93,7 +93,7 @@ footer {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #219EBC;
+    background: #e9c46a;
     color: white;
 }
 
