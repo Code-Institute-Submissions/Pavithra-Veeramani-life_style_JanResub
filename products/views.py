@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category, Brand
+from profiles.models import UserProfile
 from .forms import ProductForm
 
 
@@ -41,6 +42,10 @@ def all_products(request):
             brands = request.GET['brand'].split(',')
             products = products.filter(brand__name__in=brands)
             brands = Brand.objects.filter(name__in=brands)
+        if 'wishlist' in request.GET:
+            user = UserProfile.objects.filter(user=user).first()
+            wishlist = user.wish_list
+            products = products.filter(id__in=wishlist)
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:

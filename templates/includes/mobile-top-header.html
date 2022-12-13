@@ -12,7 +12,7 @@
                 <div class="input-group-append">
                     <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
                         <span class="icon">
-                            <i class="fas fa-search"></i>
+                            <i class="far fa-search"></i>
                         </span>
                     </button>
                 </div>
@@ -20,17 +20,17 @@
         </form>
     
 <li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none" href="{% url 'products' %}" id="user-wishlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-header nav-link d-block d-lg-none" href="{% url 'products' %}" id="user-wishlist" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <div><i class="fas fa-heart fa-lg"></i></div>
+            <div><i class="far fa-heart fa-lg"></i></div>
             <p class="my-0">Wishlist</p>
         </div>
     </a>
 </li>
 <li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-header nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <div><i class="fas fa-user fa-lg"></i></div>
+            <div><i class="far fa-user fa-lg"></i></div>
             <p class="my-0">My Account</p>
         </div>
     </a>
@@ -48,7 +48,7 @@
     </div>
 </li>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
+    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-header{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
             <p class="my-0">

@@ -28,5 +28,6 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profiles/', include('profiles.urls')),
     path('brands/', include('brands.urls')),
+    #  path('wishlist/<int:id>',  add_member_to_event, name='add_product_to_user_wish_list'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'life_style.views.handler404'

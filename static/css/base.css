@@ -11,9 +11,21 @@ body {
     color: #555;
     font-family: 'Montserrat';
 }
+.bg-banner{
+    background-color: #023047;
+    }
+
+.border-search{
+        border: 1px solid #023047 !important;
+    }
+
+.text-header{
+    color: #023047 !important;
+}
 
 .no-link {
-    text-decoration: none;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .page-bg {
@@ -25,7 +37,7 @@ body {
 }
 footer {
     bottom: 0;
-    background-color: #343434;
+    background-color: #023047;
     width: 100%;
     position: fixed;
 }
@@ -51,13 +63,13 @@ footer {
 }
 
 .shop-now-button {
-    background: black;
+    background: #219EBC;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #219ebc;
     color: white;
 }
 
@@ -71,7 +83,7 @@ footer {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #219EBC;
     color: white !important;
 }
 
@@ -81,7 +93,7 @@ footer {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #219EBC;
     color: white;
 }
 
