@@ -34,12 +34,10 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
    6. [Checkout Page](#checkout-page)
    7. [Checkout Success Page](#checkout-success-page)
    8. [Profile Page](#profile-page)
-   9. [Favorites Page](#favorites-page)
-   10. [Reviews Page](#reviews-page)
-   11. [Reviews Admin](#reviews-admin)
-   12. [Organizations Page](#organizations-page)
-   13. [Accounts Pages](#accounts-pages)
-   14. [404 Error Page](#404-error-page)
+   9. [Whishlist Page](#favorites-page)
+   10. [Brands Page](#reviews-page)
+   11. [Accounts Pages](#accounts-pages)
+   12. [404 Error Page](#404-error-page)
 4. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#languages-and-frameworks)
@@ -128,6 +126,31 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
 
 * As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
 
+### User Stories
+
+GitHub projects was used as a project management tool. Kanban board was used to add user stories and follow the project progress.
+
+**Week 1**
+![User Stories](assets/readme/sprint_1.png)
+
+**Week 2**
+![User Stories](assets/readme/sprint_2.png)
+
+**Week 3**
+![User Stories](assets/readme/sprint_3.png)
+
+**Week 4**
+![User Stories](assets/readme/sprint_4.png)
+
+**Week 5**
+![User Stories](assets/readme/sprint_5.png)
+
+**Week 6**
+![User Stories](assets/readme/sprint_6.png)
+
+**Week 7**
+![User Stories](assets/readme/sprint_6.png)
+
 ## Technologies Used
 
 
@@ -195,9 +218,6 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
 
 * [Heroku](https://www.heroku.com)   
     * Heroku was used to deploy the website.
-
-* [Tiny PNG](https://tinypng.com)    
-    * Tiny PNG was used to reduce the file size of the images.
 
 * [Coolors](https://coolors.co)  
     * Coolors was used to create a color scheme for the website.
