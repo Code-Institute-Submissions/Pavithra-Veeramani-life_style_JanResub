@@ -21,8 +21,9 @@ def all_products(request):
     order = None
     wishlist = None
 
-    user = UserProfile.objects.filter(user=request.user).first()
-    wishlist = [p.id for p in user.wish_list.all()]
+    if not request.user.is_anonymous:
+        user = UserProfile.objects.filter(user=request.user).first()
+        wishlist = [p.id for p in user.wish_list.all()]
     if request.GET:
 
         if 'sort' in request.GET:

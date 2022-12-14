@@ -62,14 +62,16 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            {% if request.user.is_authenticated %}
                                             {% if product.id in wishlist %}
                                             <small class="ml-3">
-                                                <a class="text-muted" href="{% url 'delete_product_from_user_wish_list' product.id %}"><i class="fas fa-heart fa-lg"></i></a>
+                                                <a class="text-muted" href="{% url 'delete_product_from_user_wish_list' product.id %}"><i class="fas fa-heart fa-lg" style="color:rgb(173, 72, 156)"></i></a>
                                             </small>
                                             {% else %}
                                             <small class="ml-3">
                                                 <a class="text-muted" href="{% url 'add_product_to_user_wish_list' product.id %}"><i class="far fa-heart fa-lg"></i></a>
                                             </small>
+                                            {% endif %}
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">

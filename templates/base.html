@@ -71,12 +71,14 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
+                        {% if request.user.is_authenticated %}
                         <a class="text-header nav-link" href="{% url 'products' %}?wishlist=" id="user-wishlist" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-heart fa-lg"></i></div>
                                 <p class="my-0">Wishlist</p>
                             </div>
                         </a>
+                        {% endif %}
                     </li>                    
                     <li class="list-inline-item dropdown">
                         <a class="text-header
@@ -169,20 +171,77 @@
     </footer> -->
     <!-- Footer -->
   <footer class="container-wrapper footer container-fluid p-5 bg-banner mt-auto">
-    <div class="row w-100 m-0">
-      <div class="col-md-4 px-0 py-4 px-md-4">
-        <h4 class="text-white mb-3">LifeStyle</h4>
-        <p class="text-white">Copyright &copy; 2022. All rights reserved</p>
-        <a href="https://www.privacypolicygenerator.info/live.php?token=FhOWAmrlo0e3HzFuqw9vc5UvCn0Y3ewA" 
-          target="_blank" rel="noopener" class="text-white">Privacy Policy</a>
-      </div>
-      <div class="row">
-            <div class="text-white col-12 col-md-6">
+    <div class="row">
+        <div class="col-md-2 px-0 py-4 px-md-4">
+            <h4 class="text-white mb-3">LifeStyle</h4>
+            <p class="text-white">Copyright &copy; 2022. All rights reserved</p>
+            <a href="https://www.privacypolicygenerator.info/live.php?token=FhOWAmrlo0e3HzFuqw9vc5UvCn0Y3ewA" 
+            target="_blank" rel="noopener" class="text-white">Privacy Policy</a>
+        </div>
+        <div class="col-md-2 px-0 py-4 px-md-4">
+            <div class="text-white col-12">
               <h3>Social</h3>
               <p>Keep up to date with all our latest offers</p>
               <a href="https://www.facebook.com/profile.php?id=100088453041010" target="_blank" class="text-white"><i class=" text-white fab fa-facebook-square"></i> Follow us on Facebook!</a>
             </div>
-
+        </div>
+        <div class="col-md-4 px-0 py-4 px-md-4">
+            <div class="text-black col-12">
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+                <form action="https://yahoo.us11.list-manage.com/subscribe/post?u=3b6d824f8b47752efec5d341b&amp;id=bb52ce2112&amp;f_id=001b9ae0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <h2>Subscribe</h2>
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+            </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+            </div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3b6d824f8b47752efec5d341b_bb52ce2112" tabindex="-1" value=""></div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            <p class="brandingLogo"><a href="http://eepurl.com/ifR-ZT" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            
+            <!-- Mailchimp Scripts -->
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>
+            (function($) {window.fnames = new Array(); 
+            window.ftypes = new Array();
+            fnames[0]='EMAIL';
+            ftypes[0]='email';
+            fnames[1]='FNAME';
+            ftypes[1]='text';
+            fnames[2]='LNAME';
+            ftypes[2]='text';
+            fnames[3]='ADDRESS';
+            ftypes[3]='address';
+            fnames[4]='PHONE';
+            ftypes[4]='phone';
+            fnames[5]='BIRTHDAY';
+            ftypes[5]='birthday';}(jQuery));
+            var $mcj = jQuery.noConflict(true);
+            </script>
+            <!--End mc_embed_signup-->
+        </div>
+        </div>
+    </div>
+    </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">

@@ -151,6 +151,10 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 **Week 7**
 ![User Stories](assets/readme/sprint_6.png)
 
+#### Database Model
+
+The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using SQLite3 during development and deployed using [elephantSQL](https://www.elephantsql.com/).
+
 ## Technologies Used
 
 
