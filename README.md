@@ -154,6 +154,21 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 **Week 7**
 ![User Stories](assets/readme/sprint_6.png)
 
+### Structure
+
+The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
+
+![NoPlast website map](assets/readme/sitemap.png)
+
+* Header, footer and navigation bar are consistent through all pages.
+
+* Links and forms provide clear feedback to the site user.
+
+* New additional content features are provided for the shopper once they register an account.
+
+* A 404-error page is available.
+
+
 #### Database Model
 
 The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using SQLite3 during development and deployed using [elephantSQL](https://www.elephantsql.com/).
@@ -163,8 +178,165 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 #### Wireframes
 
-## Technologies Used
+### Surface
 
+#### Color Scheme
+
+#### Typography
+The font used across the whole site is Monsterrat. It is great for creating a simple and clean-looking web design and has high readability.
+
+[Back to top ⇧](#LifeStyle)
+
+
+## Features
+
+* The website has been designed from a mobile first perspective.
+
+* Responsive design across all device sizes.
+
+#### Header
+
+* The header contains the main logo, navigation links and search product functionality.
+
+* The main logo works as a link to the home page.
+
+* The navigation links allow the shopper access to all sections to facilitate navigation across the website. 
+
+* The shopping bag icon changes, reflecting the current status. The current shopping amount is displayed for the shopper.
+
+* Wishlist allows shoppers to create personalized collections of products they want to buy and save them in their user account for future reference.
+
+
+### Product Details Page
+
+* The products navigation bar is present in case the shopper wants to go back to the products.
+
+* Provide a larger image of the product and display its detailed information.
+
+* A Whishlist icon is available to easily add the product to the shopper's favorite products.
+
+* Allow the user to select the quantity of products to be added to the shopping bag.
+
+* Provide a "Keep Shopping" button to go back to the products.
+
+* An "Add to Bag" button is available to add the desired quantity of the product to the shopping bag.
+
+* Sort functionality allows the shopper to sort the products either by date created or rating.
+
+* Provide edit and delete link for the logged in shopper's own reviews.
+
+### Products Admin
+
+#### Add Product
+
+* Provide a form for the site admin to be able to add new products to the store.
+
+#### Edit Product#
+
+* Provide a prefilled form for the site admin to be able to update products in the store.
+
+#### Search Bar
+
+* The search bar allows the user to search the website for products using specific keywords.
+
+### Home Page
+
+* Display to the shopper the product categories available, providing a link to each category.
+
+#### Footer
+
+
+* The footer contains business information as well as links to our Facebook page and privacy policy.
+
+* A newsletter registration form has been located at the footer allowing the shopper to subscribe across the whole website.
+
+### Home Page
+
+* Display to the shopper the product categories available, providing a link to each category.
+
+### Products Page
+
+* Display all the products currently available or filtered on a specific category.
+
+* Display an image of the products as well as their main information such as name, price and rating.
+
+* Display the quantity of products currently being displayed.
+
+* Provides a product navigation bar to allow the shopper to filter products per category.
+
+* A link to the shopper favorite products is available on at the top of the page.
+
+* Provides sorting functionality to sort products by price, rating, name or category.
+
+* Links to edit and remove are available for each product.
+
+### Checkout Success Page
+
+* Display the order and shopper information to allow the shopper to confirm that the information provided is correct.
+
+* Additionally, informs the shopper that an email has been sent to the email address provided with the same information.
+
+### Profile Page
+
+* Provide a form for the registered shopper to update their default information.
+
+* An order history section is present with all registered shopper's past orders information.
+
+### Wishlist Page
+
+* Display the registered shopper's favorites products and provides a link to each product.
+
+* A remove button is present for the registered shopper to remove the products they no longer wants to keep on the list.
+
+### Accounts Pages
+
+Page | Purpose | Image |
+--- | --- | --- |
+Sign Up | Allow the shopper to sign up an account for the website.  
+Sign In | Allow the registered shopper to sign in with their account. 
+Sign Out | Allow the registered shopper to sign out from their account.
+
+### 404 Error Page
+
+* Provided information to the shopper in case the address entered cannot be found.
+
+* A link to come back to the products is present.
+
+[Back to top ⇧](#LifeStyle)
+
+
+### Shopping Bag Page
+
+* A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
+
+* Display all products currently on the shopping bag and their information.
+
+* Allow the user to update the product quantity or remove the product from the shopping bag.
+
+* Display the current total cost including the bag total and delivery costs.
+
+* Provide a "Keep Shopping" button to go back to the products.
+
+* A button to checkout is provided for the shopper to finish the purchase.
+
+### Checkout Page
+
+* Provide a checkout form for the shopper to complete the purchase and provide the necessary contact, shipping and payment information.
+
+* Display an order summary listing all the products to be purchased and their total cost including the bag total and delivery costs.
+
+* Provide a link back to the shopping bag in the case the shopper would like to adjust the products in the shopping bag.
+
+* A message is displayed, informing the shopper the amount to be charged on the provided card.
+
+* Descriptive error messages are displayed in case there is any issue with the payment information provided.
+
+* A button is clearly available for the shopper to complete the order.
+
+* Stripe webhook handler is created in the backend to pass the order information in the case the browser crashes once the checkout completion.
+
+
+## Technologies Used
 
 ### Languages Used
 

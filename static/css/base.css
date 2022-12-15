@@ -203,15 +203,6 @@ input[name='q']::placeholder{
     overflow-x: hidden;
     overflow-y: auto;
 }
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
-
-
-}
-
 
   /* Allauth form submitting */
   .allauth-form-inner-content p {
@@ -352,11 +343,80 @@ input[name='q']::placeholder{
     }
 }
 
+
+/* Mobile Responsiveness Start */
 @media only screen and (max-width: 600px) {
+    .hero-outer {
+      width: 95%;
+      justify-content: center;
+    }
     #mc_embed_signup{
         background:#fff; 
         clear:left; 
         font:14px Helvetica,Arial,sans-serif;  
         width:300px;
     }
-}
+    .swin-height {
+        height: 300px;
+    }
+  }
+  /* Tablet Responsiveness Start */
+  @media only screen and (min-width: 600px) {
+    .hero-outer{
+      width: 90%;
+      justify-content: center;
+    }
+    .swin-height {
+        height: 300px;
+    }
+    #mc_embed_signup{
+        background:#fff; 
+        clear:left; 
+        font:14px Helvetica,Arial,sans-serif;  
+        width:400px;
+    }
+  }
+  
+  /* Laptop Responsiveness Start */
+  @media only screen and (min-width: 1280px) {
+
+    .container {
+        max-width: 80%;
+    }
+    .swin-height {
+        height: 300px;
+    }
+    .hero-outer{
+      width: 70%;
+      justify-content: center;
+    }
+
+    #mc_embed_signup{
+        background:#fff; 
+        clear:left; 
+        font:14px Helvetica,Arial,sans-serif;  
+        width:500px;
+    }
+  }
+  
+  /* Desktop Responsiveness Start */
+  @media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 80%;
+    }
+    .swin-height {
+        height: 400px;
+    }
+
+    .hero-outer{
+      width: 70%;
+      justify-content: center;
+    }
+
+    #mc_embed_signup{
+        background:#fff; 
+        clear:left; 
+        font:14px Helvetica,Arial,sans-serif;  
+        width:500px;
+    }
+  }
