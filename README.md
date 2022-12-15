@@ -47,7 +47,6 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
     6. [Cloud Storage](#cloud-storage)
     7. [Tools and Programs](#tools-and-programs)
 5. [Testing](#testing)
-    1. [Go to TESTING.md](https://github.com/josswe26/noplast/blob/main/TESTING.md#noplast-testing)
 6. [Deployment](#deployment)
     1. [How To Use This Project](#how-to-use-this-project)  
     2. [Deployment to Heroku](#deployment-to-heroku)   
@@ -122,6 +121,10 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
 
 * As a site admin, I want to be able to remove product no longer available.
 
+**Wishlist**
+* As a user, I want to add my favourite products to the wishlist to purchase in the future.
+* As a user, I want to add and remove products from the wishlist.
+
 **Newsletter Subscription**
 
 * As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
@@ -154,6 +157,11 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 #### Database Model
 
 The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using SQLite3 during development and deployed using [elephantSQL](https://www.elephantsql.com/).
+
+
+### Skeleton
+
+#### Wireframes
 
 ## Technologies Used
 
