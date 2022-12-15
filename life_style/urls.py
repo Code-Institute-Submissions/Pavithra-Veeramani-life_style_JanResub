@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404, add_product_to_user_wish_list, delete_product_from_user_wish_list
+from .views import handler404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,7 +28,6 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profiles/', include('profiles.urls')),
     path('brands/', include('brands.urls')),
-    path('add-wishlist/<int:id>',  add_product_to_user_wish_list, name='add_product_to_user_wish_list'),
-    path('remove-wishlist/<int:id>',  delete_product_from_user_wish_list, name='delete_product_from_user_wish_list'),
+    path('wishlist/', include('wishlist.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'life_style.views.handler404'

@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category, Brand
-from profiles.models import UserProfile
+from wishlist.models import WishList
 from .forms import ProductForm
 
 
@@ -19,11 +19,14 @@ def all_products(request):
     brands = None
     sort = None
     order = None
-    wishlist = None
+    wishlist_products = None
 
     if not request.user.is_anonymous:
-        user = UserProfile.objects.filter(user=request.user).first()
-        wishlist = [p.id for p in user.wish_list.all()]
+        try:
+            wishlist = WishList.objects.get(user=request.user)
+            wishlist_products = [p.id for p in wishlist.products.all()]
+        except WishList.DoesNotExist:
+            wishlist_products = None
     if request.GET:
 
         if 'sort' in request.GET:
@@ -47,8 +50,8 @@ def all_products(request):
             brands = request.GET['brand'].split(',')
             products = products.filter(brand__name__in=brands)
             brands = Brand.objects.filter(name__in=brands)
-        if 'wishlist' in request.GET:
-            products = products.filter(pk__in=wishlist)
+        if 'wishlist' in request.GET and wishlist is not None:
+            products = products.filter(pk__in=wishlist_products)
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -63,7 +66,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_sorting': current_sorting,
-        'wishlist': wishlist
+        'wishlist': wishlist_products
     }
 
     return render(request, 'products/products.html', context)
