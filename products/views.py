@@ -26,7 +26,7 @@ def all_products(request):
             wishlist = WishList.objects.get(user=request.user)
             wishlist_products = [p.id for p in wishlist.products.all()]
         except WishList.DoesNotExist:
-            wishlist_products = None
+            wishlist_products = []
     if request.GET:
 
         if 'sort' in request.GET:
@@ -50,7 +50,7 @@ def all_products(request):
             brands = request.GET['brand'].split(',')
             products = products.filter(brand__name__in=brands)
             brands = Brand.objects.filter(name__in=brands)
-        if 'wishlist' in request.GET:
+        if 'wishlist' in request.GET and wishlist_products is not None:
             products = products.filter(pk__in=wishlist_products)
         if 'q' in request.GET:
             query = request.GET['q']
