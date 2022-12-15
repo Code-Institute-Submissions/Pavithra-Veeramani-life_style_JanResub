@@ -38,7 +38,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                     </div>                   
                 </div>
-                {% endif %}
+                 
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -108,6 +108,12 @@
                         {% endif %}
                     {% endfor %}
                 </div>
+                {% else %}
+                <div class="swin-height">
+                    No Products available for this selection.
+                </div>
+                {% endif %}
+
             </div>
         </div>
     </div>
