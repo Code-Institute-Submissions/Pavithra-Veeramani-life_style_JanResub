@@ -187,6 +187,12 @@ The font used across the whole site is Monsterrat. It is great for creating a si
 
 [Back to top ⇧](#LifeStyle)
 
+## Marketing
+
+**Facebook Business page**
+
+See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=100088453041010)
+![LifeStyle Facebook Business page image](assets/readme/facebook_screenshot.png)
 
 ## Features
 
@@ -244,7 +250,6 @@ The font used across the whole site is Monsterrat. It is great for creating a si
 * Display to the shopper the product categories available, providing a link to each category.
 
 #### Footer
-
 
 * The footer contains business information as well as links to our Facebook page and privacy policy.
 
@@ -485,7 +490,7 @@ Sign Out | Allow the registered shopper to sign out from their account.
 ### Final Deployment 
 
 * Create a runtime.txt `python-3.8.14`
-* Create a Procfile `web: gunicorn lifestyle.wsgi:application`
+* Create a Procfile `web: gunicorn life_style.wsgi:application`
 * When development is complete change the debug setting to: `DEBUG = False` in settings.py
 * In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`
 
