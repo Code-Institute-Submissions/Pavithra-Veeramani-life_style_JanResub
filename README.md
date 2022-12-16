@@ -158,7 +158,7 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 
 The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
 
-![NoPlast website map](assets/readme/sitemap.png)
+![LifeStyle website map](assets/readme/sitemap.png)
 
 * Header, footer and navigation bar are consistent through all pages.
 
@@ -418,7 +418,7 @@ Sign Out | Allow the registered shopper to sign out from their account.
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
     * W3C CSS Validator was used to validate the CSS code.
 
-[Back to top ⇧](#noplast)
+[Back to top ⇧](#LifeStyle)
 ## Deployment
  
 * This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal.
