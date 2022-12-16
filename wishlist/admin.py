@@ -12,6 +12,6 @@ class WishListAdmin(admin.ModelAdmin):
     def get_products(self, obj):
         return [p.id for p in obj.products.all()]
     ordering = ('id',)
-    
+
 
 admin.site.register(WishList, WishListAdmin)

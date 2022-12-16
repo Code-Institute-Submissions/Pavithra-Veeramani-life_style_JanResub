@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 
-ALLOWED_HOSTS = ['life-style.herokuapp.com', 'life-style1.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    'life-style.herokuapp.com', 'life-style1.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -51,7 +52,7 @@ INSTALLED_APPS = [
     'profiles',
     'brands',
     'wishlist',
-    
+
     # Other
     'crispy_forms',
     'storages',
@@ -106,7 +107,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 SITE_ID = 1
 
-CSRF_TRUSTED_ORIGINS = ['https://pavithraveera-lifestyle-cpzkn47p8jz.ws-eu71.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = [
+    'https://pavithraveera-lifestyle-cpzkn47p8jz.ws-eu71.gitpod.io/']
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -132,23 +134,27 @@ else:
          'ENGINE': 'django.db.backends.sqlite3',
          'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
      }
- }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
@@ -182,7 +188,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-   
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'life-style1'
     AWS_S3_REGION_NAME = 'eu-west-1'
@@ -199,7 +205,7 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    
+
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10

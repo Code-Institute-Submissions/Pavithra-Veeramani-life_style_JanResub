@@ -178,9 +178,25 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 #### Wireframes
 
+[Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+
+Page | Desktop Version | Mobile Version
+--- | --- | ---
+Home | ![Desktop home wireframe image](assets/wireframes/home_page_desktop.png) | ![Mobile home wireframe image](assets/wireframes/home_page_mobile.png)
+Products | ![Desktop products wireframe image](assets/wireframes/products_page_desktop.png) | ![Mobile products wireframe image](assets/wireframes/products_page_mobile.png)
+Product Details | ![Desktop product details wireframe image](assets/wireframes/product_details_desktop.png) | ![Mobile product details wireframe image](assets/wireframes/product_details_page_mobile.png)
+Shopping Bag | ![Desktop shopping bag wireframe image](assets/wireframes/shopping_bag_desktop.png) | ![Mobile shopping bag wireframe image](assets/wireframes/shopping_bag_mobile.png)
+Checkout | ![Desktop checkout wireframe image](assets/wireframes/checkout_desktop.png) | ![Mobile checkout wireframe image](assets/wireframes/checkout_mobile.png)
+
+
 ### Surface
 
 #### Color Scheme
+
+ #2A9D8F is used in header, footer and icons which have attractive and pleasant appearance overall.
+
+ #E9C46A is a tints of golden sand which is used for buttons throughout the website.
+
 
 #### Typography
 The font used across the whole site is Monsterrat. It is great for creating a simple and clean-looking web design and has high readability.
@@ -295,8 +311,8 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ### Accounts Pages
 
-Page | Purpose | Image |
---- | --- | --- |
+Page | Purpose | 
+--- | --- | 
 Sign Up | Allow the shopper to sign up an account for the website.  
 Sign In | Allow the registered shopper to sign in with their account. 
 Sign Out | Allow the registered shopper to sign out from their account.

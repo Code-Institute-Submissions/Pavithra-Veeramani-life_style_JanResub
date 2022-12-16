@@ -7,7 +7,7 @@ def all_brands(request):
     """ A view to show all brands, including sorting and search queries """
 
     brands = Brand.objects.all()
-            
+
     context = {
         'brands': brands
     }

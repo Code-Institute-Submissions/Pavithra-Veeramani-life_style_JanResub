@@ -14,6 +14,8 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='userprofile',
             name='wish_list',
-            field=models.ManyToManyField(blank=True, related_name='user_wish_list_products', to='products.Product'),
+            field=models.ManyToManyField(
+                blank=True, related_name='user_wish_list_products',
+                to='products.Product'),
         ),
     ]
