@@ -10,11 +10,12 @@
 {% endblock %}
 
 {% block content %}
-            <ul class="list-group">
-                {% for brand in brands %}
-                        <a class="no-link" href="/products?brand={{brand.name}}">
-                            <li class="list-group-item text-center border-0">{{ brand.name}}</li>
-                        </a>
-                {% endfor %}
-            </ul>
+<br/>
+<div class="swin-height">
+    <ul class="list-group">
+        {% for brand in brands %}
+            <li class="list-group-item text-center border-0"><a class="no-link" href="/products?brand={{brand.name}}">{{ brand.name}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}
