@@ -601,6 +601,17 @@ Product Edit Link | Clicking the link redirects to the edit product page. | Pass
 Product Delete Link | Clicking the link delete the product from the database. | Pass |
 
 
+#### Products Sorting
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Sort By Price (low to high) | Products should be listed in the ascending order of price. | Pass |
+Sort By Price (high to low) | Products should be listed in the descending order of price. | Pass |
+Sort By Rating (low to high) | Products should be listed in the ascending order of rating. | Pass |
+Sort By Rating (high to low) | Products should be listed in the descending order of rating. | Pass |
+Sort By Name (A to Z) | Products should be listed in the ascending order of alphabets. | Pass |
+Sort By Name (Z to A) | Products should be listed in the descending order of alphabets. | Pass |
+
 #### Product Details Page
 
 Element | Expected Outcome | Pass/Fail |
