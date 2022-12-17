@@ -681,8 +681,13 @@ Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
 Brands link | Clicking the brands displays the various brands | Pass |
 
+#### Known Issues
+Scenario | Issue |
+--- | --- |
+Payment Confirmation | Confirmation email is not sent out to the customer's email address |
 
 ## Code Validation
+
 
 ### HTML
 
