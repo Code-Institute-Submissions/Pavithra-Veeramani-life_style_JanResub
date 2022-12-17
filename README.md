@@ -239,9 +239,7 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 
 ### Structure
 
-The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
-
-![LifeStyle website map](assets/readme/sitemap.png)
+The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. 
 
 * Header, footer and navigation bar are consistent through all pages.
 
@@ -302,6 +300,7 @@ The keywords for home decor are:
 * home accessories
 * interior design
 * decor lighting
+* lifestyle
 
 
 **Facebook Business page**
@@ -314,9 +313,15 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ## Features
 
-* The website has been designed from a mobile first perspective.
+* The website has been designed from a mobile user perspective.
 
-* Responsive design across all device sizes.
+* Responsive design across all devices.
+
+
+### Home Page
+![LifeStyle home image](assets/readme/home_page.png)
+
+* Display to the shopper the product categories available, providing a link to each category.
 
 #### Header
 
@@ -332,50 +337,13 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Wishlist allows shoppers to create personalized collections of products they want to buy and save them in their user account for future reference.
 
-
-### Product Details Page
-
-![LifeStyle product details image](assets/readme/products_detail.png)
-
-* The products navigation bar is present in case the shopper wants to go back to the products.
-
-* Provide a larger image of the product and display its detailed information.
-
-* A Whishlist icon is available to easily add the product to the shopper's favorite products.
-
-* Allow the user to select the quantity of products to be added to the shopping cart.
-
-* Provide a "Continue Shopping" button to go back to the products.
-
-* An "Add to cart" button is available to add the desired quantity of the product to the shopping cart.
-
-* Sort functionality allows the shopper to sort the products either by date created or rating.
-
-* Provide edit and delete link for the logged in shopper's own reviews.
-
-### Products Admin
-
-#### Add Product
-![LifeStyle add product image](assets/readme/add_product.png)
-
-* Provide a form for the site admin to be able to add new products to the store.
-
-#### Edit Product
-![LifeStyle add product image](assets/readme/edit_product.png)
-
-* * Provide a prefilled form for the site admin to be able to update products in the store.
-
-### Home Page
-![LifeStyle home image](assets/readme/home_page.png)
-
-* Display to the shopper the product categories available, providing a link to each category.
-
 #### Footer
 ![LifeStyle header image](assets/readme/footer_1.png)
 
 * The footer contains business information as well as links to our Facebook page and privacy policy.
 
 * A newsletter registration form has been located at the footer allowing the shopper to subscribe across the whole website.
+
 
 ### Products Page
 ![LifeStyle products image](assets/readme/products_page.png)
@@ -394,11 +362,40 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Links to edit and remove are available for each product.
 
+
+### Product Details Page
+
+![LifeStyle product details image](assets/readme/products_detail.png)
+
+* The products navigation bar is present in case the shopper wants to go back to the products.
+
+* Provide a larger image of the product and display its detailed information.
+
+* Allow the user to select the quantity of products to be added to the shopping cart.
+
+* Provide a "Continue Shopping" button to go back to the products list page.
+
+* An "Add to cart" button is available to add the desired quantity of the product to the shopping cart.
+
+* Provide edit and delete link for the admin users.
+
+### Products Admin
+
+#### Add Product
+![LifeStyle add product image](assets/readme/add_product.png)
+
+* Allow the site admin to add new products to the store.
+
+#### Edit Product
+![LifeStyle add product image](assets/readme/edit_product.png)
+
+* Allow the site admin to edit an existing product.
+
 ### Shopping cart Page
 
 ![LifeStyle shopping cart page image](assets/readme/shopping_bag.png)
 
-* A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
+* A notification message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
 
 * Display all products currently on the shopping cart and their information.
 
@@ -436,19 +433,19 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Additionally, informs the shopper that an email has been sent to the email address provided with the same information.
 
-### Profile Page
+### My Profile Page
 
 ![LifeStyle success page image](assets/readme/profile_page.png)
 
-* Provide a form for the registered shopper to update their default information.
+* Provide a form for the registered shopper to update their information.
 
-* An order history section is present with all registered shopper's past orders information.
+* Show a list of historical orders.
 
 ### Wishlist Page
 
 ![LifeStyle success page image](assets/readme/wishlist_page.png)
 
-* Display the registered shopper's favorites products and provides a link to each product.
+* Display the registered shopper's favorites products and displays them in Products page.
 
 * A remove button is present for the registered shopper to remove the products they no longer wants to keep on the list.
 
@@ -456,7 +453,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ![LifeStyle success page image](assets/readme/brands_page.png)
 
-* Display different brands in the website.
+* Display all the brands fom the products available in the website.
 
 ### Accounts Pages
 
@@ -491,13 +488,13 @@ Sign Out | Allow the registered shopper to sign out from their account.
 
 * [Django Template](https://jinja.palletsprojects.com) was used as a templating language for Django to display backend data to HTML.
    
+* [jQuery 3.6.0](https://jquery.com/) was used as a JavaScript library to help writing less JavaScript code. 
+
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used throughout the website to help with styling and responsiveness.
 
 * [Google Fonts](https://fonts.google.com) was used to import the font into the html file, and were used on all parts of the site.
 
 * [Font Awesome](https://fontawesome.com) was used throughout the website to add icons for aesthetic and UX purposes. 
-
-* [jQuery 3.6.0](https://jquery.com/) was used as a JavaScript library to help writing less JavaScript code. 
 
 
 ### Packages / Dependencies Installed
@@ -514,19 +511,19 @@ Sign Out | Allow the registered shopper to sign out from their account.
 
 
 ### Database Management
-* [SQLite](https://www.sqlite.com/index.html) was used as a single-file database during development.
+* [SQLite](https://www.sqlite.com/index.html) was used as a single-file database for development environment.
 
-* [Heroku ElephantSql](https://www.heroku.com/ElephantSql) database was used in production, as a service based on ElephantSql provided by Heroku.
+* [Heroku ElephantSql](https://www.heroku.com/ElephantSql) cloud database was used in production environment.
 
 
 ### Payment Service
 
-   * [Stripe](https://stripe.com/en-gb-nl) was used to process all online payments transactions.
+* [Stripe](https://stripe.com/en-gb-nl) was used to process all online payments transactions.
 
 
 ### Cloud Storage
 
-* [Amazon Web Service S3](https://aws.amazon.com/s3/) was used to store all static and media files in production.  
+* [Amazon Web Service S3](https://aws.amazon.com/s3/) was used to store all static and media files in production.
 
 ### Tools and Programs
 
@@ -562,27 +559,35 @@ Sign Out | Allow the registered shopper to sign out from their account.
 
 ### Testing
 
+Manual testing was done throughout the application to verify functionalities.
+
 #### General
 
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
-Main Logo Link | Clicking the link redirects to the home page. | Pass |
-My Account Icon - Register Link | Clicking the link redirects to the account sign up page. | Pass |
-My Account Icon - Login Link | Clicking the link redirects to the account sign in page. | Pass |
-My Account Icon - Logout link | Clicking the link redirects to the account sign out page. | Pass |
-My Account Icon - Product Management Link | Clicking the link redirects to the add product page. | Pass |
-My Account Icon - My Profile Link | Clicking the link redirects to the profile page. | Pass |
-Shopping Cart Icon | Clicking the link redirects to the shopping cart. | Pass |
-Search Bar | Clicking the link redirects to the products page and display the matching products. | Pass |
-Privacy Policy Link | Clicking the link opens the privacy policy. | Pass |
-Facebook Icon | Clicking the link open the business Facebook page on a separate tab. | Pass |
+Website Logo Link | When clicking the logo, the browser redirects me to the home page. | Pass |
+My Account Icon - Register Link | When clicking the link, the browser redirects to the account sign up page. | Pass |
+My Account Icon - Login Link | When clicking the link, the browser redirects to the account sign in page. | Pass |
+My Account Icon - Logout link | When clicking the link, the browser redirects to the account sign out page. | Pass |
+My Account Icon - Product Management Link | When clicking the link, the browser redirects to the add product page. | Pass |
+My Account Icon - My Profile Link | When clicking the link, the browser redirects to the profile page. | Pass |
+Shopping Cart Icon | When clicking the link, the browser redirects to the shopping cart. | Pass |
+Search Bar | When clicking the link, the browser redirects to the products page and display the matching products. | Pass |
+Privacy Policy Link | When clicking the link, the browser opens the privacy policy. | Pass |
+Facebook Icon | When clicking the link, the browser open the business Facebook page on a separate tab. | Pass |
 Newsletter Form | Email address gets registered to the database when submitting the form. | Pass |
 
 #### Home Page
 
+#### Home Page - Navigation
+
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
-Categories Links | Clicking any of the links will redirect to the products page and filter the products on that category. | Pass |
+All Products | When Clicked, the screen shows the Products page and displays all the products. | Pass |
+Living Room | When Clicked, the screen shows the Products page and displays only the products in 'Living Room' catagory. | Pass |
+Home Decor | When Clicked, the screen shows the Products page and displays only the products in 'Home Decor' catagory. | Pass |
+Kitchen | When Clicked, the screen shows the Products page and displays only the products in 'Kitchen' catagory. | Pass |
+Brands | When Clicked, the screen shows the Brands page and displays all the 'Brands' available. | Pass |
 
 #### Products Page
 
@@ -590,7 +595,7 @@ Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
 Product Navigation Bar Links | Clicking any of the links will filter the products on that category. | Pass |
 Sort By Selector | Sort by functionality sort the products depending on the selection. | Pass |
-Wishlist Link | Clicking the link redirects to the wishlist page. | Pass |
+Wishlist Link | Clicking the link redirects to the Products page. | Pass |
 Product Image | Clicking the image redirect to the product details page for that specific product. | Pass |
 Product Edit Link | Clicking the link redirects to the edit product page. | Pass |
 Product Delete Link | Clicking the link delete the product from the database. | Pass |
@@ -601,8 +606,7 @@ Product Delete Link | Clicking the link delete the product from the database. | 
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
 Product Navigation Bar Links | Clicking any of the links will redirect to the products page and filter the products on that category. | Pass
-Product Image | Clicking the image opens it on a separate tab. | Pass |
-Wishlist Icon | Clicking the icon toggle the product on the wishlist. | Pass |
+Product Image | Clicking the image opens the image on a separate tab. | Pass |
 Product Edit Link | Clicking the link redirects to the edit product page. | Pass |
 Product Delete Link | Clicking the link deletes the product from the database. | Pass |
 Decrease Quantity Button | Decreases the quantity on the input form. | Pass |

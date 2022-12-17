@@ -46,7 +46,7 @@
     <header class="container-fluid fixed-top">
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-banner text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>                
+                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
         </div>
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -108,9 +108,9 @@
                                 <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                    €{{ grand_total|floatformat:2 }}
+                                    ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                    €0.00
+                                    $0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -212,7 +212,7 @@
             
             <!-- Mailchimp Scripts -->
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>
-            (function(€) {window.fnames = new Array(); 
+            (function($) {window.fnames = new Array(); 
             window.ftypes = new Array();
             fnames[0]='EMAIL';
             ftypes[0]='email';
@@ -226,7 +226,7 @@
             ftypes[4]='phone';
             fnames[5]='BIRTHDAY';
             ftypes[5]='birthday';}(jQuery));
-            var €mcj = jQuery.noConflict(true);
+            var $mcj = jQuery.noConflict(true);
             </script>
             <!--End mc_embed_signup-->
         </div>
@@ -236,7 +236,7 @@
 
     {% block postloadjs %}
     <script type="text/javascript">
-        €('.toast').toast('show');
+        $('.toast').toast('show');
     </script>
     {% endblock %}
     
