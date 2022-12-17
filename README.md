@@ -129,6 +129,75 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
 
 * As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
 
+#### Strategy Table
+
+Opportunity / Problem | Importance | Viability / Feasibility
+--- | --- | ---
+Account registration | 5 | 5
+Create, edit and delete products | 5 | 5
+User profile | 5 | 5
+Responsive design | 5 | 5
+Wishlist | 4 | 4
+Order summary | 5 | 5
+Search products by name or description | 5 | 5
+Edit quantities inside the shopping bag | 4 | 4
+Product details view | 5 | 5
+View current shopping cart | 5 | 5
+Newsletter subscription | 5 | 5
+Card payment | 5 | 5
+Display current purchase total | 5 | 5
+Save delivery information | 5 | 5
+
+### Scope
+
+According to the strategy table, not all features can be implemented in the first release of the project. For this reason, the project will be divided in multiple phases. The first phase will include the features that have been identified in order to build the minimum viable product.
+
+
+**First Phase**
+
+* Responsive design
+
+* Create, edit and delete products
+
+* Account registration
+
+* User profile
+
+* Save shipment information
+
+* Sort products by different criteria
+
+* Search products by name or description
+
+* Product details view
+
+* Display current purchase total
+
+* View current shopping cart
+
+* Edit quantities inside the shopping bag
+
+* Card payment
+
+* Newsletter subscription
+
+
+**Second Phase**
+
+* Wishlist
+
+* Rate products
+
+* Write product reviews
+
+**Third Phase**
+
+* Product quick view
+
+* Display similar products at the a product details view
+
+* Shopping cart quick view
+
 ### User Stories
 
 GitHub projects was used as a project management tool. Kanban board was used to add user stories and follow the project progress.
@@ -173,6 +242,8 @@ The website has been organized in a Hierarchical Tree Structure to ensure the si
 
 The database model has been designed using [drawsql](https://drawsql.app/). The type of database being used for the is relational database being managed using SQLite3 during development and deployed using [elephantSQL](https://www.elephantsql.com/).
 
+![LifeStyle Database Model](assets/readme/draw_sql.png)
+
 
 ### Skeleton
 
@@ -205,6 +276,18 @@ The font used across the whole site is Monsterrat. It is great for creating a si
 
 ## Marketing
 
+### Search Engine Optimisation
+
+Search Engine Optimisation means the process of improving your site to increase its visibility when people search for products or services.
+
+The keywords for home decor are:
+
+* decor
+* home accessories
+* interior design
+* decor lighting
+
+
 **Facebook Business page**
 
 See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=100088453041010)
@@ -218,6 +301,8 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 #### Header
 
+![Lifestyle header image](assets/readme/header_1.png)
+
 * The header contains the main logo, navigation links and search product functionality.
 
 * The main logo works as a link to the home page.
@@ -230,6 +315,8 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 
 ### Product Details Page
+
+![LifeStyle product details image](assets/readme/products_detail.png)
 
 * The products navigation bar is present in case the shopper wants to go back to the products.
 
@@ -250,32 +337,29 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 ### Products Admin
 
 #### Add Product
+![LifeStyle add product image](assets/readme/add_product.png)
 
 * Provide a form for the site admin to be able to add new products to the store.
 
-#### Edit Product#
+#### Edit Product
+![LifeStyle add product image](assets/readme/edit_product.png)
 
-* Provide a prefilled form for the site admin to be able to update products in the store.
-
-#### Search Bar
-
-* The search bar allows the user to search the website for products using specific keywords.
+* * Provide a prefilled form for the site admin to be able to update products in the store.
 
 ### Home Page
+![LifeStyle home image](assets/readme/home_page.png)
 
 * Display to the shopper the product categories available, providing a link to each category.
 
 #### Footer
+![LifeStyle header image](assets/readme/footer_1.png)
 
 * The footer contains business information as well as links to our Facebook page and privacy policy.
 
 * A newsletter registration form has been located at the footer allowing the shopper to subscribe across the whole website.
 
-### Home Page
-
-* Display to the shopper the product categories available, providing a link to each category.
-
 ### Products Page
+![LifeStyle products image](assets/readme/products_page.png)
 
 * Display all the products currently available or filtered on a specific category.
 
@@ -291,7 +375,55 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Links to edit and remove are available for each product.
 
+### Shopping Bag Page
+
+![LifeStyle shopping bag page image](assets/readme/shopping_bag.png)
+
+* A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
+
+* Display all products currently on the shopping bag and their information.
+
+* Allow the user to update the product quantity or remove the product from the shopping bag.
+
+* Display the current total cost including the bag total and delivery costs.
+
+* Provide a "Keep Shopping" button to go back to the products.
+
+* A button to checkout is provided for the shopper to finish the purchase.
+
+### Checkout Page
+
+![LifStyle checkout page image](assets/readme/checkout_page.png)
+
+* Provide a checkout form for the shopper to complete the purchase and provide the necessary contact, shipping and payment information.
+
+* Display an order summary listing all the products to be purchased and their total cost including the bag total and delivery costs.
+
+* Provide a link back to the shopping bag in the case the shopper would like to adjust the products in the shopping bag.
+
+* A message is displayed, informing the shopper the amount to be charged on the provided card.
+
+* Descriptive error messages are displayed in case there is any issue with the payment information provided.
+
+* A button is clearly available for the shopper to complete the order.
+
+* Stripe webhook handler is created in the backend to pass the order information in the case the browser crashes once the checkout completion.
+
 ### Checkout Success Page
+
+![LifeStyle success page image](assets/readme/checkout_summary.png)
+
+* A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
+
+* Display all products currently on the shopping bag and their information.
+
+* Allow the user to update the product quantity or remove the product from the shopping bag.
+
+* Display the current total cost including the bag total and delivery costs.
+
+* Provide a "Keep Shopping" button to go back to the products.
+
+* A button to checkout is provided for the shopper to finish the purchase.
 
 * Display the order and shopper information to allow the shopper to confirm that the information provided is correct.
 
@@ -299,15 +431,25 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ### Profile Page
 
+![LifeStyle success page image](assets/readme/profile_page.png)
+
 * Provide a form for the registered shopper to update their default information.
 
 * An order history section is present with all registered shopper's past orders information.
 
 ### Wishlist Page
 
+![LifeStyle success page image](assets/readme/wishlist_page.png)
+
 * Display the registered shopper's favorites products and provides a link to each product.
 
 * A remove button is present for the registered shopper to remove the products they no longer wants to keep on the list.
+
+### Brands Page
+
+![LifeStyle success page image](assets/readme/brands_page.png)
+
+* Display different brands in the website.
 
 ### Accounts Pages
 
@@ -324,37 +466,6 @@ Sign Out | Allow the registered shopper to sign out from their account.
 * A link to come back to the products is present.
 
 [Back to top ⇧](#LifeStyle)
-
-
-### Shopping Bag Page
-
-* A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
-
-* Display all products currently on the shopping bag and their information.
-
-* Allow the user to update the product quantity or remove the product from the shopping bag.
-
-* Display the current total cost including the bag total and delivery costs.
-
-* Provide a "Keep Shopping" button to go back to the products.
-
-* A button to checkout is provided for the shopper to finish the purchase.
-
-### Checkout Page
-
-* Provide a checkout form for the shopper to complete the purchase and provide the necessary contact, shipping and payment information.
-
-* Display an order summary listing all the products to be purchased and their total cost including the bag total and delivery costs.
-
-* Provide a link back to the shopping bag in the case the shopper would like to adjust the products in the shopping bag.
-
-* A message is displayed, informing the shopper the amount to be charged on the provided card.
-
-* Descriptive error messages are displayed in case there is any issue with the payment information provided.
-
-* A button is clearly available for the shopper to complete the order.
-
-* Stripe webhook handler is created in the backend to pass the order information in the case the browser crashes once the checkout completion.
 
 
 ## Technologies Used
@@ -440,6 +551,128 @@ Sign Out | Allow the registered shopper to sign out from their account.
     * W3C CSS Validator was used to validate the CSS code.
 
 [Back to top ⇧](#LifeStyle)
+
+
+### Testing
+
+#### Home Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Categories Links | Clicking any of the links will redirect to the products page and filter the products on that category. | Pass |
+
+#### Products Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Product Navigation Bar Links | Clicking any of the links will filter the products on that category. | Pass |
+Sort By Selector | Sort by functionality sort the products depending on the selection. | Pass |
+Wishlist Link | Clicking the link redirects to the wishlist page. | Pass |
+Product Image | Clicking the image redirect to the product details page for that specific product. | Pass |
+Product Edit Link | Clicking the link redirects to the edit product page. | Pass |
+Product Delete Link | Clicking the link delete the product from the database. | Pass |
+
+
+#### Product Details Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Product Navigation Bar Links | Clicking any of the links will redirect to the products page and filter the products on that category. | Pass
+Product Image | Clicking the image opens it on a separate tab. | Pass |
+Wishlist Icon | Clicking the icon toggle the product on the wishlist. | Pass |
+Product Edit Link | Clicking the link redirects to the edit product page. | Pass |
+Product Delete Link | Clicking the link deletes the product from the database. | Pass |
+Decrease Quantity Button | Decreases the quantity on the input form. | Pass |
+Increase Quantity Button | Increases the quantity on the input form. | Pass |
+Keep Shopping Button | Clicking the button redirects to the products page. | Pass |
+Add To Bag Button | Clicking the button adds the specified quantity of the product to the shopping bag. | Pass |
+Reviews Link | Clicking the link toggle the product reviews. | Pass |
+Sort By Selector | Sort by functionality sort the reviews depending on the selection. | Pass |
+Review Edit Link | Clicking the link redirects to the edit review page. | Pass |
+Review Delete Link | Clicking the link delete the review from the database. | Pass |
+Leave A Review Button | Clicking the button redirects to the add review page. | Pass |
+
+
+#### Add Product Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Select Image Button | Clicking the button allows to add an image to the form | Pass |
+Add Product Form | Product gets registered to the database when submitting the form. | Pass |
+Cancel Button | Clicking the button redirects to the products page. | Pass |
+
+
+#### Edit Product Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Select Image Button | Clicking the button allows to add or replace the image | Pass |
+Edit Product Form | Product gets updated when submitting the form. | Pass |
+Cancel Button | Clicking the button redirects to the products page. | Pass |
+
+
+#### Shopping Bag Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Decrease Quantity Button | Decreases the quantity on the input form. | Pass |
+Increase Quantity Button | Increases the quantity on the input form. | Pass |
+Update Link | Clicking the link update the product quantity on the shopping bag. | Pass
+Delete Link | Clicking the link removed the product from the shopping bag. | Pass
+Keep Shopping Button | Clicking the button redirects to the products page. | Pass |
+Secure Checkout Button | Clicking the button redirects to the checkout page. | Pass |
+
+
+#### Checkout Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Checkout Form | An order gets created when submitted the form. | Pass |
+Login Link | Clicking the link redirects to the account sign in page. | Pass |
+Register Link | Clicking the link redirects to the account sign up page. | Pass |
+Save Information Check | Checking the box update the user's profile information during the checkout process. | Pass |
+Adjust Bag Link | Clicking the link redirects to shopping bag page. | Pass |
+
+
+#### Checkout Success Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Now checkout the latest deals | Clicking the button redirects to the products page. | Pass |
+
+
+#### Profile Page
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Update Information Form | User's information gets updated when submitting the form. | Pass |
+Order Link | Clicking the link redirects to order view. | Pass |
+
+
+#### Wishlist Page
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Remove Link | Clicking the link removes the product from the user's wishlist list. | Pass |
+
+## Code Validation
+
+### HTML
+
+* No errors were returned when passing through the [W3C Markup Validator](https://validator.w3.org/) validator. However, managed to find a stray end tag div in toast_success.html which was fixed.
+
+### CSS
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) found no errors on my CSS files.
+
+### Python
+
+Pylint was used continuously during the development process to analyze the Python code for programming errors.
+
+The code was then checked for errors via the terminal command "python3 -m flake8". This returned a number of whitespace and indentation errors which were rectified where possible. (The unfixed errors were situated in root files such as .vscode/artictern)
+
+Other errors regarding unused imports were corrected by removing the unnecessary files.
+
+
+
 ## Deployment
  
 * This project was developed using a GitPod workspace. The code was committed to Git and pushed to GitHub using the terminal.
@@ -601,4 +834,18 @@ This project is deployed on Heroku for production, with all static and media fil
    STRIPE_SECRET_KEY | your_stripe_secret_key  
    USE_AWS | True 
 
+   ## Credits
 
+   ### Media
+
+   * [Pexels](https://www.pexels.com/)
+
+   ### Code
+
+   * The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, PostgreSQL database, Stripe, and AWS S3 as storage.  
+
+   ## Acknowledgements  
+
+   * Thanks to my mentor Marcel Mulders for his support and feedback.
+
+   * Thanks to the tutor support in code institute for their support.
