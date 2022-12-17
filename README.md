@@ -30,14 +30,14 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
    3. [Products Page](#products-page)
    4. [Product Details Page](#product-details-page)
    5. [Products Admin](#products-admin)
-   5. [Shopping Bag Page](#shopping-bag-page)
+   5. [Shopping cart Page](#shopping-cart-page)
    6. [Checkout Page](#checkout-page)
    7. [Checkout Success Page](#checkout-success-page)
    8. [Profile Page](#profile-page)
    9. [Whishlist Page](#favorites-page)
-   10. [Brands Page](#reviews-page)
-   11. [Accounts Pages](#accounts-pages)
-   12. [404 Error Page](#404-error-page)
+   10.[Brands Page](#reviews-page)
+   11 [Accounts Pages](#accounts-pages)
+   12.[404 Error Page](#404-error-page)
 4. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#languages-and-frameworks)
@@ -65,69 +65,81 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
 
 #### Project Goals
 
-* Responsive design to make the website accessible on different screen sizes.
+* Simplified and secure online shopping experience for the customer.
 
-* Structure is easy to understand and navigates effortlessly for an easy shopping experience.
+* The website is easy to navigate and user friendly.
 
-* The website desing and colors are appealing to the customers.
+* Responsive web design to be compatible on all devices.
 
-* Customers are offered the opportunity to register an account.
+* Aesthetically pleasing website design and colors.
 
-* Easy shopping process to create a pleaseant experince for the customer.
+* Users will be able to register an account, add wish list, add cart and make secure payment.
+
 
 #### User Goals
 
 **Shopping Experience**
 
-* As a shopper, I want to easily find the products and their details.
+* As an online shopper, I want to easily find the products and their details.
 
-* As a shopper, I want to view products on a specific category.
+* As an online shopper, I want to view products on a specific category.
 
-* As a shopper, I want to be able to sort the products depending on their price, rating or category.
+* As an online shopper, I want to view products on a specific brand.
 
-* As a shopper, I want to be able to search for products using specific keywords.
+* As an online shopper, I want to add products to a whish list for later viewing.
 
-* As a shopper, I want to easily select the quantity of products to be purchased.
+* As an online shopper, I want to be able to sort the products depending on their price, rating or category.
 
-* As a shopper, I want to easily view the current purchase amount.
+* As an online shopper, I want to be able to search for products using specific keywords.
 
-**Shopping Bag and Checkout**
+* As an online shopper, I want to easily select the quantity of products to be purchased.
 
-* As a shopper, I want to view all items currently on my shopping bag and be able to update them.
+* As an online shopper, I want to easily view the current purchase amount.
 
-* As a shopper, I want to easily provide my shipping and payment information during the checkout.
+* As an online shopper, I want to securely make payment.
 
-* As a shopper, I want to feel my personal and payment data is being handled securely.
+**Shopping Cart and Checkout**
 
-* As a shopper, I want to receive an order confirmation once I have finished my purchase.
+* As an online shopper, I want to view all products currently on my shopping cart and be able to update them.
 
-* As a shopper, I want to receive an order confirmation email for my records.
+* As an online shopper, I want to easily provide my shipping and payment information during the checkout.
+
+* As an online shopper, I want to make payments securely.
+
+* As an online shopper, I want to receive an order confirmation once I have finished my purchase.
+
 
 **User Accounts**
 
-* As a frequent shopper, I want to be able to register an account using my email address to be able to keep my records and interact with the website.
+* As a frequent shopper, I want to register an account using my emailid and logon to the website subsequently.
 
-* As a frequent shopper, I want to receive a confirmation once my account has been registered to make sure the information entered was correctly.
+* As a frequent shopper, I want to receive a confirmation email once my account has been registered to make sure the information entered was correctly.
 
-* As a registered shopper, I want to easily log in and out from my account.
+* As a registered shopper, I want to easily sign in and sign out of my account.
 
 * As a registered shopper, I want to be able to recover access to my account in case I forget my password.
 
-* As a registered shopper, I want to have a personalized profile page where I can keep my contact information updated and see my past orders.
+* As a registered shopper, I want a profile page where my contact details are saved.
+
+* As a registered shopper, I want to see historic order details.
 
 **Product Admin**
 
-* As a site admin, I want to be able to add and update products.
+* As an admin user, I want to add new products.
 
-* As a site admin, I want to be able to remove product no longer available.
+* As an admin user, I want to update existing products.
+
+* As an admin user, I want to remove products.
 
 **Wishlist**
+
 * As a user, I want to add my favourite products to the wishlist to purchase in the future.
+
 * As a user, I want to add and remove products from the wishlist.
 
 **Newsletter Subscription**
 
-* As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
+* As an admin user, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
 
 #### Strategy Table
 
@@ -140,13 +152,15 @@ Responsive design | 5 | 5
 Wishlist | 4 | 4
 Order summary | 5 | 5
 Search products by name or description | 5 | 5
-Edit quantities inside the shopping bag | 4 | 4
+Edit quantities inside the shopping cart | 4 | 4
 Product details view | 5 | 5
 View current shopping cart | 5 | 5
 Newsletter subscription | 5 | 5
 Card payment | 5 | 5
 Display current purchase total | 5 | 5
 Save delivery information | 5 | 5
+
+[Back to top ⇧](#LifeStyle)
 
 ### Scope
 
@@ -163,7 +177,7 @@ According to the strategy table, not all features can be implemented in the firs
 
 * User profile
 
-* Save shipment information
+* Save delivery information
 
 * Sort products by different criteria
 
@@ -175,7 +189,7 @@ According to the strategy table, not all features can be implemented in the firs
 
 * View current shopping cart
 
-* Edit quantities inside the shopping bag
+* Edit quantities inside the shopping cart
 
 * Card payment
 
@@ -184,23 +198,21 @@ According to the strategy table, not all features can be implemented in the firs
 
 **Second Phase**
 
-* Wishlist
-
 * Rate products
 
-* Write product reviews
+* Product view
 
 **Third Phase**
 
-* Product quick view
-
-* Display similar products at the a product details view
+* Display similar products at the product details view
 
 * Shopping cart quick view
 
+* Wishlist
+
 ### User Stories
 
-GitHub projects was used as a project management tool. Kanban board was used to add user stories and follow the project progress.
+GitHub projects was used as a project management tool. Kanban board was used to add user stories.
 
 **Week 1**
 ![User Stories](assets/readme/sprint_1.png)
@@ -223,6 +235,8 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 **Week 7**
 ![User Stories](assets/readme/sprint_6.png)
 
+[Back to top ⇧](#LifeStyle)
+
 ### Structure
 
 The website has been organized in a Hierarchical Tree Structure to ensure the site user navigates through the site effortlessly and intuitively. Here you can you can find the website map design.
@@ -244,6 +258,7 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 ![LifeStyle Database Model](assets/readme/draw_sql.png)
 
+[Back to top ⇧](#LifeStyle)
 
 ### Skeleton
 
@@ -256,9 +271,10 @@ Page | Desktop Version | Mobile Version
 Home | ![Desktop home wireframe image](assets/wireframes/home_page_desktop.png) | ![Mobile home wireframe image](assets/wireframes/home_page_mobile.png)
 Products | ![Desktop products wireframe image](assets/wireframes/products_page_desktop.png) | ![Mobile products wireframe image](assets/wireframes/products_page_mobile.png)
 Product Details | ![Desktop product details wireframe image](assets/wireframes/product_details_desktop.png) | ![Mobile product details wireframe image](assets/wireframes/product_details_page_mobile.png)
-Shopping Bag | ![Desktop shopping bag wireframe image](assets/wireframes/shopping_bag_desktop.png) | ![Mobile shopping bag wireframe image](assets/wireframes/shopping_bag_mobile.png)
+Shopping cart | ![Desktop shopping cart wireframe image](assets/wireframes/shopping_bag_desktop.png) | ![Mobile shopping cart wireframe image](assets/wireframes/shopping_bag_mobile.png)
 Checkout | ![Desktop checkout wireframe image](assets/wireframes/checkout_desktop.png) | ![Mobile checkout wireframe image](assets/wireframes/checkout_mobile.png)
 
+[Back to top ⇧](#LifeStyle)
 
 ### Surface
 
@@ -291,7 +307,10 @@ The keywords for home decor are:
 **Facebook Business page**
 
 See the live Facebook Business page [here](https://www.facebook.com/profile.php?id=100088453041010)
+
 ![LifeStyle Facebook Business page image](assets/readme/facebook_screenshot.png)
+
+[Back to top ⇧](#LifeStyle)
 
 ## Features
 
@@ -309,7 +328,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * The navigation links allow the shopper access to all sections to facilitate navigation across the website. 
 
-* The shopping bag icon changes, reflecting the current status. The current shopping amount is displayed for the shopper.
+* The shopping cart icon changes, reflecting the current status. The current shopping amount is displayed for the shopper.
 
 * Wishlist allows shoppers to create personalized collections of products they want to buy and save them in their user account for future reference.
 
@@ -324,11 +343,11 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * A Whishlist icon is available to easily add the product to the shopper's favorite products.
 
-* Allow the user to select the quantity of products to be added to the shopping bag.
+* Allow the user to select the quantity of products to be added to the shopping cart.
 
-* Provide a "Keep Shopping" button to go back to the products.
+* Provide a "Continue Shopping" button to go back to the products.
 
-* An "Add to Bag" button is available to add the desired quantity of the product to the shopping bag.
+* An "Add to cart" button is available to add the desired quantity of the product to the shopping cart.
 
 * Sort functionality allows the shopper to sort the products either by date created or rating.
 
@@ -375,17 +394,17 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Links to edit and remove are available for each product.
 
-### Shopping Bag Page
+### Shopping cart Page
 
-![LifeStyle shopping bag page image](assets/readme/shopping_bag.png)
+![LifeStyle shopping cart page image](assets/readme/shopping_bag.png)
 
 * A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
 
-* Display all products currently on the shopping bag and their information.
+* Display all products currently on the shopping cart and their information.
 
-* Allow the user to update the product quantity or remove the product from the shopping bag.
+* Allow the user to update the product quantity or remove the product from the shopping cart.
 
-* Display the current total cost including the bag total and delivery costs.
+* Display the current total cost including the cart total and delivery costs.
 
 * Provide a "Keep Shopping" button to go back to the products.
 
@@ -397,9 +416,9 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Provide a checkout form for the shopper to complete the purchase and provide the necessary contact, shipping and payment information.
 
-* Display an order summary listing all the products to be purchased and their total cost including the bag total and delivery costs.
+* Display an order summary listing all the products to be purchased and their total cost including the cart total and delivery costs.
 
-* Provide a link back to the shopping bag in the case the shopper would like to adjust the products in the shopping bag.
+* Provide a link back to the shopping cart in the case the shopper would like to adjust the products in the shopping cart.
 
 * A message is displayed, informing the shopper the amount to be charged on the provided card.
 
@@ -412,18 +431,6 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 ### Checkout Success Page
 
 ![LifeStyle success page image](assets/readme/checkout_summary.png)
-
-* A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
-
-* Display all products currently on the shopping bag and their information.
-
-* Allow the user to update the product quantity or remove the product from the shopping bag.
-
-* Display the current total cost including the bag total and delivery costs.
-
-* Provide a "Keep Shopping" button to go back to the products.
-
-* A button to checkout is provided for the shopper to finish the purchase.
 
 * Display the order and shopper information to allow the shopper to confirm that the information provided is correct.
 
@@ -555,6 +562,22 @@ Sign Out | Allow the registered shopper to sign out from their account.
 
 ### Testing
 
+#### General
+
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Main Logo Link | Clicking the link redirects to the home page. | Pass |
+My Account Icon - Register Link | Clicking the link redirects to the account sign up page. | Pass |
+My Account Icon - Login Link | Clicking the link redirects to the account sign in page. | Pass |
+My Account Icon - Logout link | Clicking the link redirects to the account sign out page. | Pass |
+My Account Icon - Product Management Link | Clicking the link redirects to the add product page. | Pass |
+My Account Icon - My Profile Link | Clicking the link redirects to the profile page. | Pass |
+Shopping Cart Icon | Clicking the link redirects to the shopping cart. | Pass |
+Search Bar | Clicking the link redirects to the products page and display the matching products. | Pass |
+Privacy Policy Link | Clicking the link opens the privacy policy. | Pass |
+Facebook Icon | Clicking the link open the business Facebook page on a separate tab. | Pass |
+Newsletter Form | Email address gets registered to the database when submitting the form. | Pass |
+
 #### Home Page
 
 Element | Expected Outcome | Pass/Fail |
@@ -584,14 +607,8 @@ Product Edit Link | Clicking the link redirects to the edit product page. | Pass
 Product Delete Link | Clicking the link deletes the product from the database. | Pass |
 Decrease Quantity Button | Decreases the quantity on the input form. | Pass |
 Increase Quantity Button | Increases the quantity on the input form. | Pass |
-Keep Shopping Button | Clicking the button redirects to the products page. | Pass |
-Add To Bag Button | Clicking the button adds the specified quantity of the product to the shopping bag. | Pass |
-Reviews Link | Clicking the link toggle the product reviews. | Pass |
-Sort By Selector | Sort by functionality sort the reviews depending on the selection. | Pass |
-Review Edit Link | Clicking the link redirects to the edit review page. | Pass |
-Review Delete Link | Clicking the link delete the review from the database. | Pass |
-Leave A Review Button | Clicking the button redirects to the add review page. | Pass |
-
+Continue Shopping Button | Clicking the button redirects to the products page. | Pass |
+Add To Cart Button | Clicking the button adds the specified quantity of the product to the shopping cart. | Pass |
 
 #### Add Product Page
 
@@ -611,14 +628,14 @@ Edit Product Form | Product gets updated when submitting the form. | Pass |
 Cancel Button | Clicking the button redirects to the products page. | Pass |
 
 
-#### Shopping Bag Page
+#### Shopping cart Page
 
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
 Decrease Quantity Button | Decreases the quantity on the input form. | Pass |
 Increase Quantity Button | Increases the quantity on the input form. | Pass |
-Update Link | Clicking the link update the product quantity on the shopping bag. | Pass
-Delete Link | Clicking the link removed the product from the shopping bag. | Pass
+Update Link | Clicking the link update the product quantity on the shopping cart. | Pass
+Delete Link | Clicking the link removed the product from the shopping cart. | Pass
 Keep Shopping Button | Clicking the button redirects to the products page. | Pass |
 Secure Checkout Button | Clicking the button redirects to the checkout page. | Pass |
 
@@ -631,7 +648,7 @@ Checkout Form | An order gets created when submitted the form. | Pass |
 Login Link | Clicking the link redirects to the account sign in page. | Pass |
 Register Link | Clicking the link redirects to the account sign up page. | Pass |
 Save Information Check | Checking the box update the user's profile information during the checkout process. | Pass |
-Adjust Bag Link | Clicking the link redirects to shopping bag page. | Pass |
+Adjust cart Link | Clicking the link redirects to shopping cart page. | Pass |
 
 
 #### Checkout Success Page
@@ -652,13 +669,20 @@ Order Link | Clicking the link redirects to order view. | Pass |
 #### Wishlist Page
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
-Remove Link | Clicking the link removes the product from the user's wishlist list. | Pass |
+Add | Clicking the heart icon will add product to the wishlist. | Pass |
+Remove | Clicking the heart icon will remove the product from the wishlist. | Pass |
+
+#### Brands page
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Brands link | Clicking the brands displays the various brands | Pass |
+
 
 ## Code Validation
 
 ### HTML
 
-* No errors were returned when passing through the [W3C Markup Validator](https://validator.w3.org/) validator. However, managed to find a stray end tag div in toast_success.html which was fixed.
+* No errors were returned when passing through the [W3C Markup Validator](https://validator.w3.org/) validator. 
 
 ### CSS
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) found no errors on my CSS files.
@@ -671,7 +695,7 @@ The code was then checked for errors via the terminal command "python3 -m flake8
 
 Other errors regarding unused imports were corrected by removing the unnecessary files.
 
-
+[Back to top ⇧](#LifeStyle)
 
 ## Deployment
  
@@ -842,10 +866,17 @@ This project is deployed on Heroku for production, with all static and media fil
 
    ### Code
 
-   * The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, PostgreSQL database, Stripe, and AWS S3 as storage.  
+    * The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, PostgreSQL database, Stripe, and AWS S3 as storage.  
+
+     [Stack Overflow](https://stackoverflow.com/) were referenced to get better ideas in order to understand and implement the code.
+
+     [Bootstrap](https://getbootstrap.com/) were referenced for the bootstrap ideas. 
+
+     [Django](https://docs.djangoproject.com/en/4.1/) was referenced for Django.
+
 
    ## Acknowledgements  
 
    * Thanks to my mentor Marcel Mulders for his support and feedback.
 
-   * Thanks to the tutor support in code institute for their support.
+   * Thanks to the tutor support in code institute and slack community for their support.
