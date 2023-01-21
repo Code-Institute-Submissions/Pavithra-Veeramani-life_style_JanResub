@@ -1,15 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import User
-from products.model import Product
+from products.models import Product
 
-# Create your models here.
+
 class Review(models.Model):
-    title = models.CharField(max_length=200, unique=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
     content = models.TextField()
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_product_reviews')
     created_on = models.DateTimeField(auto_now_add=True)
     
     class Meta:
         ordering = ['-created_on']
 
     def __str__(self):
-        return f"Review {self.product} by {self.name}"
+        return f"Review {self.content} for {self.product} by {self.created_by}"

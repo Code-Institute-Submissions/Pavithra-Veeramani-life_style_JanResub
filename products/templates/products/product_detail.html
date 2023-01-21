@@ -85,6 +85,35 @@
                             
                         </div>
                     </form>
+                    {% if user.is_authenticated and not current_user_review_flag %}
+                    <div class="col-md-4 card mb-4  mt-3 ">
+                        <div class="card-body">
+                            <h3>Leave a comment:</h3>
+                            <p>Posting as: {{ user.username }}</p>
+                            <form method="post" action="{% url 'create_review' product.id %}" style="margin-top: 1.3em;">
+                                {{ review_form | crispy }}
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="col-md-8 card mb-4  mt-3 ">
+                        <h3>Reviews:</h3>
+                        <div class="card-body">
+                            {% for review in reviews %}
+                            <div class="comments" style="padding: 10px;">
+                                <p class="font-weight-bold">
+                                    {{ review.created_by }}
+                                    <span class=" text-muted font-weight-normal">
+                                        {{ review.created_on }}
+                                    </span> wrote:
+                                </p>
+                                {{ review.content | linebreaks }}
+                            </div>
+                            {% endfor %}
+                        </div>
                 </div>
             </div>
         </div>
