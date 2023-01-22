@@ -17,7 +17,6 @@ class SubscriptionView(View):
         via the subscription form
         """
         email = request.POST['email']
-        print(('email', email))
         if email:
             if Subscription.objects.filter(email=email).exists():
                 messages.error(

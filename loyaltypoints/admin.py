@@ -2,6 +2,7 @@ from django.contrib import admin
 
 from .models import LoyaltyPoints
 
+
 class LoyaltyPointsAdmin(admin.ModelAdmin):
     list_display = (
         'user',
@@ -9,4 +10,6 @@ class LoyaltyPointsAdmin(admin.ModelAdmin):
         'points',
         'redeemed_flag'
     )
+
+
 admin.site.register(LoyaltyPoints, LoyaltyPointsAdmin)
