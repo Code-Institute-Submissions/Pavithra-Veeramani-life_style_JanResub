@@ -11,6 +11,7 @@ from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from cart.contexts import cart_contents
+from loyaltypoints.models import LoyaltyPoints
 
 import stripe
 import json
@@ -86,6 +87,7 @@ def checkout(request):
                     return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
+
             return redirect(
                 reverse('checkout_success', args=[order.order_number]))
         else:
@@ -148,6 +150,9 @@ def checkout_success(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     if request.user.is_authenticated:
+        points = round(order.grand_total * 1)
+        loyaltyPoints = LoyaltyPoints.create(request.user, order, points)
+        loyaltyPoints.save()
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile

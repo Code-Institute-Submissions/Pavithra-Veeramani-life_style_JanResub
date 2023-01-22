@@ -18,11 +18,10 @@ def create_review(request, product_id):
         form.instance.created_by = request.user
         form.instance.product = product
         form.save()
-        messages.success(request, 'Your product review has been submitted')
+        messages.success(request, 'Review submitted successfully.')
         return redirect(reverse('product_detail', args=[product.id]))
     else:
-        messages.error(request, 'Failed to submit the review. \
-            Please ensure the form is valid.')
+        messages.error(request, 'Review submission failed.')
 
     context = {
         'product': product,
