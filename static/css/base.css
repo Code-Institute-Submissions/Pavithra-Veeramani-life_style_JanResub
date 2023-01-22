@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 
 
 html {
@@ -9,20 +9,20 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Montserrat';
+    font-family: 'Raleway';
 }
 
 /* Delivery banner */
 .bg-banner{
-    background-color: #2A9D8F;
-    }
+    background-color: white;
+}
 
 .border-search{
-        border: 1px solid #2A9D8F !important;
-    }
+        border: 1px solid white !important;
+}
 
 .text-header{
-    color: #2A9D8F !important;
+    color: #000 !important;
 }
 
 .no-link {
@@ -48,6 +48,64 @@ body {
 .nav-bottom {
     border-bottom: 1px solid grey;
 }
+
+footer {
+    background-color: #e0eaf3;
+    color: white;
+    font-size: 14px;
+}
+.footer-social{
+    font-size: 25px;
+}
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.carousel-inner{
+    position:relative;
+    width:100%;
+    overflow:hidden
+}
+.carousel-item{
+    position:relative;
+    display:none;
+    float:left;
+    width:100%;
+    margin-right:-100%;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition:-webkit-transform .6s ease-in-out;
+    transition:transform .6s ease-in-out;
+    transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out
+}
+
+.carousel-control-prev{
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index:1;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-align:center;
+    align-items:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    width:15%;
+    padding:0;
+    color:#fff;
+    text-align:center;
+    background:0 0;
+    border:0;
+    opacity:.5;
+    transition:opacity .15s ease
+}
+.carousel-control-prev-icon{
+        display:inline-block;
+        width:20px;
+        height:20px;
+        background:50%/100% 100% no-repeat
+    }
 /* from Bulma */
 .icon {
     align-items: center;
@@ -285,6 +343,34 @@ input[name='q']::placeholder{
     border-radius: 0;
 }
 
+
+.logo-image {
+    height: 90px;
+}
+
+.nav-icons i:hover {
+    color: #4D4E54;
+    ;
+}
+
+.username:hover {
+    color: #4D4E54;
+    ;
+}
+
+.navbar ul a {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500 !important;
+}
+
+.navbar ul a:hover {
+    color: #A99166;
+}
+
+#topnav-items {
+    font-size: 14px;}
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {

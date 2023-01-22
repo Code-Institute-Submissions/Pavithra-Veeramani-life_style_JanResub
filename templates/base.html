@@ -17,7 +17,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
         
@@ -44,11 +44,11 @@
     
     <div class="content">
     <header class="container-fluid fixed-top">
-        <div id="delivery-banner" class="row text-center">
+        <!-- <div id="delivery-banner" class="row text-center">
             <div class="col bg-banner text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
-        </div>
+        </div> -->
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -58,9 +58,9 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border-search rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border-gold rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-outline-dark border-search rounded-0" type="submit">
+                            <button class="form-control btn btn-outline-dark border-gold rounded-0" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -70,7 +70,7 @@
                 </form>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <ul id="topnav-items" class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         {% if request.user.is_authenticated %}
                         <a class="text-header nav-link" href="{% url 'products' %}?wishlist=" id="user-wishlist" aria-haspopup="true" aria-expanded="false">
@@ -157,38 +157,61 @@
     </div>
 
     
-    <footer class="container-wrapper footer container-fluid p-5 bg-banner mt-auto">
-    <div class="row">
-        <div class="col-md-2 px-0 py-4 px-md-4">
-            <h4 class="text-white mb-3">LifeStyle</h4>
-            <p class="text-white">Copyright &copy; 2022. All rights reserved</p>
-            <a href="https://www.privacypolicygenerator.info/live.php?token=FhOWAmrlo0e3HzFuqw9vc5UvCn0Y3ewA" 
-            target="_blank" rel="noopener" class="text-white">Privacy Policy</a>
-        </div>
-        <div class="col-md-2 px-0 py-4 px-md-4">
-            <div class="text-white">
-              <h4 class="text-white mb-3">Social</h4>
-              <p>Keep up to date with all our latest offers</p>
-              <a href="https://www.facebook.com/profile.php?id=100088453041010" target="_blank" class="text-white"><i class=" text-white fab fa-facebook-square"></i> Follow us on Facebook!</a>
+    <footer class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <div class="row py-lg-3 px-lg-3 " >
+                <div class="col-12 col-md-4 px-4 px-md-0 py-4">
+                    <h6 class="text-black mb-3">LifeStyle</h6>
+                    <!-- <p class="text-black">Copyright &copy; 2022. All rights reserved</p> -->
+                    <a href="https://www.privacypolicygenerator.info/live.php?token=FhOWAmrlo0e3HzFuqw9vc5UvCn0Y3ewA" 
+                    target="_blank" rel="noopener" class="text-black">Privacy Policy</a>
+                </div>
+                <div class="col-12 col-md-4 px-4 px-md-0 py-4">
+                    <div class="text-black">
+                        <h6 class="text-black mb-3">Social</h6>
+                        <p>Keep up to date with all our latest offers</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="footer-social" href="https://www.facebook.com/profile.php?id=100088453041010" target="_blank" class="text-black">
+                                    <i class="text-black fab fa-facebook-square"></i> 
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="footer-social" href="https://www.twitter.com" target="_blank" class="text-black">
+                                    <i class="text-black fab fa-twitter-square"></i> 
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="footer-social" href="https://www.instagram.com" target="_blank" class="text-black">
+                                    <i class="text-black fab fa-instagram-square"></i> 
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="footer-social" href="https://www.pinterest.com" target="_blank" class="text-black">
+                                    <i class="text-black fab fa-pinterest-square"></i> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-4 px-md-0 py-4">
+                    <h6 class="text-black mb-3">Subscribe to our newsletters</h6>
+
+                    <form method="POST" action="{% url 'subscription' %}" id="subscription-form" class="text-muted form mb-5"
+                    enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <label for="email" class="text-black mb-3">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div>
+                        <small id="emailHelp" class="text-black mb-3">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-outline-black" type="submit">Subscribe</button>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 px-0 py-4 px-md-4">
-            <h4 class="text-white mb-3">Subscribe to our newsletters</h4>
-
-			<form method="POST" action="{% url 'subscription' %}" id="subscription-form" class="text-muted form mb-5"
-              enctype="multipart/form-data">
-              {% csrf_token %}
-              <label for="email" class="text-white mb-3">Email address</label>
-              <input type="email" id="email" name="email" required>
-              <div>
-                <small id="emailHelp" class="text-white mb-3">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="mt-3">
-                  <button class="btn btn-outline-light" type="submit">Subscribe</button>
-              </div>
-            </form>
-        </div>
-    </div>
     </footer>
 
     {% block postloadjs %}
