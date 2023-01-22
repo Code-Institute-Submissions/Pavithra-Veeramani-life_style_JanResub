@@ -6,6 +6,7 @@ class LoyaltyPointsAdmin(admin.ModelAdmin):
     list_display = (
         'user',
         'order',
-        'points'
+        'points',
+        'redeemed_flag'
     )
 admin.site.register(LoyaltyPoints, LoyaltyPointsAdmin)
