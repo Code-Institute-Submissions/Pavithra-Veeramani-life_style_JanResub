@@ -89,10 +89,23 @@ def product_detail(request, product_id):
         if review.created_by == request.user:
             current_user_review_flag = True
 
+    product_in_wishlist = False
+
+    if not request.user.is_anonymous:
+        try:
+            wishlist = WishList.objects.get(user=request.user)
+            wishlist_products = [p.id for p in wishlist.products.all()]
+            for wl_prod in wishlist_products:
+                if wl_prod == product_id:
+                    product_in_wishlist = True
+        except WishList.DoesNotExist:
+            product_in_wishlist = False
+
     context = {
         'product': product,
         'reviews': reviews,
         'current_user_review_flag': current_user_review_flag,
+        'product_in_wishlist': product_in_wishlist,
         'review_form': ReviewForm()
     }
 

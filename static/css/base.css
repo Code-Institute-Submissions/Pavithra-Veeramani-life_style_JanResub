@@ -59,7 +59,8 @@ footer {
 }
 /* Logo */
 .logo-image {
-    height: 90px;
+    height: 200px;
+    
 }
 text-jet{
     color:#4D4E54 !important
@@ -146,18 +147,23 @@ text-jet{
     color: white;
 }
 
-.btn-outline-black {
+.btn-outline {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: #000 !important;
     border: 1px solid black;
 }
 
+.btn-outline-black {
+    background: #000;
+    color: white !important;
+    border: 1px solid black;
+}
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #e9c46a;
-    color: white !important;
+    background: white;
+    color: #000 !important;
 }
 
 .shop-now-button:hover,
