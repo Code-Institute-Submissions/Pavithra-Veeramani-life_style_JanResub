@@ -11,11 +11,35 @@
 
 {% block content %}
 <br/>
-<div class="swin-height">
+<!-- <div class="swin-height">
     <ul class="list-group">
         {% for brand in brands %}
-            <li class="list-group-item text-center border-0"><a class="no-link" ="/products?brand={{brand.name}}">{{ brand.name}}</a></li>
+            <li class="list-group-item text-center border-0"><a class="no-link" = "/products?brand={{brand.name}}">{{ brand.name}}</a></li>
         {% endfor %}
-    </ul>
+    </ul> -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center pt-4">Laurel and Pine</h2>
+                <img src="https://life-style1.s3.eu-west-1.amazonaws.com/media/living_4.jpg" class="img-fluid rounded float-left" width="304" height="236">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center pt-4">Harvey Newman</h2>
+                <img src="https://life-style1.s3.eu-west-1.amazonaws.com/media/living_5.jpg" class="img-fluid rounded float-left" width="304" height="236">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center pt-4">Range</h2>
+                <img src="https://life-style1.s3.eu-west-1.amazonaws.com/media/living_6.jpg" class="img-fluid rounded float-left" width="304" height="236">
+        </div>
+    </div>
 </div>
 {% endblock %}
+

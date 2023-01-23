@@ -57,6 +57,18 @@ footer {
 .footer-social{
     font-size: 25px;
 }
+/* Logo */
+.logo-image {
+    height: 90px;
+}
+text-jet{
+    color:#4D4E54 !important
+}
+/* Loyalty */
+.loyalty{
+    font-weight: bold;
+    color: #212529
+}
 /* Carousel */
 .carousel-inner img {
     width: 100%;
