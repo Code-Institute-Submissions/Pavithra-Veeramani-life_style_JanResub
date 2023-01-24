@@ -50,7 +50,7 @@ body {
 }
 
 footer {
-    background-color: #e0eaf3;
+    background-color: #86BA90;
     color: white;
     font-size: 14px;
 }
@@ -59,7 +59,7 @@ footer {
 }
 /* Logo */
 .logo-image {
-    height: 200px;
+   width: 160px;
     
 }
 text-jet{
@@ -140,33 +140,40 @@ text-jet{
     background: #e9c46a;
     color: white;
     min-width: 260px;
+   
 }
 
 .btn-black {
-    background: #e9c46a;
-    color: white;
+    background: #000;
+    color: white !important;
+    border: 1px solid black;
 }
 
 .btn-outline {
     background: white;
     color: #000 !important;
+
     border: 1px solid black;
+   
 }
 
 .btn-outline-black {
     background: #000;
     color: white !important;
     border: 1px solid black;
+    
 }
-
-.btn-outline-black:hover,
+ 
+ .btn-outline-black:hover,
 .btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-black:focus,
+.btn-black:hover {
     background: white;
     color: #000 !important;
-}
+    
+} 
 
-.shop-now-button:hover,
+/* .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
@@ -174,7 +181,7 @@ text-jet{
 .btn-black:focus {
     background: #e9c46a;
     color: white;
-}
+} */
 
 .text-black {
     color: #000 !important;
@@ -182,6 +189,8 @@ text-jet{
 
 .border-black {
     border: 1px solid black !important;
+    color: white !important
+    
 }
 
 .bg-black {
@@ -204,12 +213,14 @@ text-jet{
     position: fixed;
     bottom: 10px;
     right: 10px;
+    
 }
 
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
+    
 }
 
 input[name='q']::placeholder{
