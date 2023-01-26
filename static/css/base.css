@@ -185,6 +185,8 @@ text-jet{
 
 .text-black {
     color: #000 !important;
+    /* flex-direction: column;
+    padding-left: 20px; */
 }
 
 .border-black {

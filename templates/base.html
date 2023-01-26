@@ -54,6 +54,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <img src="{{ MEDIA_URL }}lifestyle_logo_2.png" alt="LifeStyle logo" class="logo-image">
+                    <!-- <h2 class="logo-font text-black my-0"><strong>Life</strong>Style</h2> -->
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -158,12 +159,12 @@
     </div>
 
     
-    <footer class="container-fluid">
-        <div class="d-flex justify-content-center">
+     <footer class="container-fluid">
+     <div class="d-flex justify-content-around">
             <div class="row py-lg-3 px-lg-3 " >
                 <div class="col-12 col-md-4 px-4 px-md-0 py-4">
                     <h6 class="text-black mb-3">LifeStyle</h6>
-                    <!-- <p class="text-black">Copyright &copy; 2022. All rights reserved</p> -->
+                     <p class="text-black">Copyright &copy; 2022. All rights reserved</p>
                     <a href="https://www.privacypolicygenerator.info/live.php?token=FhOWAmrlo0e3HzFuqw9vc5UvCn0Y3ewA" 
                     target="_blank" rel="noopener" class="text-black">Privacy Policy</a>
                 </div>
@@ -213,7 +214,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+    
 
     {% block postloadjs %}
     <script type="text/javascript">

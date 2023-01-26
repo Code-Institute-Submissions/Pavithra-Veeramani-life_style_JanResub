@@ -10,36 +10,20 @@
 {% endblock %}
 
 {% block content %}
-<br/>
-<!-- <div class="swin-height">
-    <ul class="list-group">
+
+<div class="container mt-5 mb-3">
+    <div class="row">
         {% for brand in brands %}
-            <li class="list-group-item text-center border-0"><a class="no-link" = "/products?brand={{brand.name}}">{{ brand.name}}</a></li>
+        <div class="col-md-4">
+            <div class="card p-3 mb-2 border-0">
+                <div >
+                    <a href="/products?brand={{brand.name}}"><img src="{{ MEDIA_URL }}{{brand.name}}.png" class="img-fluid rounded float-left" width="304" height="236" alt="{{brand.name}}"></a>
+                </div>
+            </div>
+        </div>
         {% endfor %}
-    </ul> -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center pt-4">Laurel and Pine</h2>
-                <img src="https://life-style1.s3.eu-west-1.amazonaws.com/media/living_4.jpg" class="img-fluid rounded float-left" width="304" height="236">
-        </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center pt-4">Harvey Newman</h2>
-                <img src="https://life-style1.s3.eu-west-1.amazonaws.com/media/living_5.jpg" class="img-fluid rounded float-left" width="304" height="236">
-        </div>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center pt-4">Range</h2>
-                <img src="https://life-style1.s3.eu-west-1.amazonaws.com/media/living_6.jpg" class="img-fluid rounded float-left" width="304" height="236">
-        </div>
-    </div>
-</div>
+
 {% endblock %}
 
