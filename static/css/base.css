@@ -74,7 +74,7 @@ body {
 }
 
 footer {
-    background-color: #86BA90;
+    background-color: hwb(228 78% 20%);
     color: white;
     font-size: 14px;
 }
@@ -176,16 +176,13 @@ text-jet{
 .btn-outline {
     background: white;
     color: #000 !important;
-
     border: 1px solid black;
-   
 }
 
 .btn-outline-black {
     background: #000;
     color: white !important;
     border: 1px solid black;
-    
 }
  
  .btn-outline-black:hover,
@@ -194,7 +191,6 @@ text-jet{
 .btn-black:hover {
     background: white;
     color: #000 !important;
-    
 } 
 
 /* .shop-now-button:hover,
@@ -317,62 +313,48 @@ input[name='q']::placeholder{
     overflow-y: auto;
 }
 
-  /* Allauth form submitting */
-  .allauth-form-inner-content p {
-    margin-top: 1.5rem; /*mt-4*/
-    color: #6c757d; /*text-secondary*/
-  }
 
-  .allauth-form-inner-content input{
-    border-color:#000;
-    border-radius: 0;
-  }
+/* Allauth form formatting */
 
-  .allauth-form-inner-content label:not([for='id_rememeber']) {
+.allauth-form-inner-content p {
+    font-size: 14px;
+    margin-top: 1rem;
+}
+/* 
+.allauth-form-inner-content a:not(.btn) {
+    color: #A99166;
+} */
+/* 
+.allauth-form-inner-content input {
+    border-color: #A99166;
+} */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
-  }
+}
 
-  .allauth-form-inner-content input::placeholder {
+.allauth-form-inner-content input::placeholder {
     color: #aab7c4;
-  }
+}
 
-  .allauth-form-inner-content button,
-  .allauth-form-inner-content input[type='submit'] {
-      /* btn */
-      display: inline-block;
-      font-weight: 400;
-      color: #fff;
-      text-align: center;
-      vertical-align: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      background-color: #000;
-      border: 1px solid #000;
-      padding: .375rem .75rem;
-      font-size: 1rem;
-      line-height: 1.5;
-      border-radius: 0;
-  
-      /* standard bootstrap btn transitions */
-      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-  
-  .allauth-form-inner-content button:hover,
-  .allauth-form-inner-content input[type='submit']:hover {	
-      color: #fff;
-      background-color: #222;
-      border-color: #222;
-  }
-  
-  .allauth-form-inner-content a {
-      color: #17a2b8; /* text-info */
-  }
+/* .allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    background: #000;
+    color: white !important;
+    border: 1px solid black;
+    padding: 8px;
+}
 
-  /* Product Form */
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    background: white;
+    color: #000 !important;
+} */
 
-  .btn-file {
+
+/* Product Form */
+
+.btn-file {
     position: relative;
     overflow: hidden;
 }
