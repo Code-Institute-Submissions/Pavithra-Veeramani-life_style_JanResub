@@ -20,6 +20,7 @@
                             <a href="{{ product.image.url }}" target="_blank">
                                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
+                            {% if request.user.is_authenticated %}
                             <div class="circle">
                                 {% if product_in_wishlist %}
                                     <small class="ml-3">
@@ -31,6 +32,7 @@
                                     </small>
                                 {% endif %}
                             </div>
+                            {% endif %}
                         {% else %}
                             <a href="">
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
