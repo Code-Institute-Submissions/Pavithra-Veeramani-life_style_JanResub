@@ -15,9 +15,7 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Shopping Cart</h2>
-                <hr>
+                <h3 class="logo-font mb-4 pt-4">Shopping Cart</h3>
             </div>
         </div>
 
@@ -60,15 +58,16 @@
                             </a>	
                         </div>
                     </div>
-                    <div class="table-responsive rounded d-none d-md-block">
+                    <div class="d-none d-md-block">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black">
+                            <thead class="thead-light">
                                 <tr>
-                                    <th scope="col">Product Info</th>
+                                    <th scope="col"></th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
+                                    <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
 
@@ -89,6 +88,12 @@
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
+                                    <td class="py-3">
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+                                            <small class="text-muted"><i class="fa fa-trash-o" style="font-size:20px;"></i>
+                                            </small>
+                                        </a>
+                                    </td>
                                 </tr>
                             {% endfor %}
                             <tr>
@@ -105,7 +110,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your cart is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-md">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
@@ -129,7 +134,8 @@
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
+        console.log('Update link' + $('#update-form'));
+        var form = $(this).parent().parent().parent();
         form.submit();
     })
 
@@ -138,7 +144,7 @@
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemId}/`;
+        var url = `/cart/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
         $.post(url, data)
