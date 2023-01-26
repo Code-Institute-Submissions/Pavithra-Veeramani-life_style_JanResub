@@ -15,21 +15,34 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    {% if product.image %}
-                        <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
+                    <div class="product-container ">
+                        {% if product.image %}
+                            <a href="{{ product.image.url }}" target="_blank">
+                                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            </a>
+                            <div class="circle">
+                                {% if product_in_wishlist %}
+                                    <small class="ml-3">
+                                        <a class="text-muted" href="{% url 'delete_product_from_user_wish_list' product.id %}"><i class="fas fa-heart fa-lg" style="color:rgb(190, 6, 6)"></i></a>
+                                    </small>
+                                {% else %}
+                                    <small class="ml-3">
+                                        <a class="text-muted" href="{% url 'add_product_to_user_wish_list' product.id %}"><i class="far fa-heart fa-lg"></i></a>
+                                    </small>
+                                {% endif %}
+                            </div>
                         {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                        </a>
-                    {% endif %}
+                            <a href="">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            </a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 
-                <div class="mb-5 mt-md-5">
-                    <p class="mt-0W"> <h4>{{ product.name }}</h4>
+                <div class="mb-5 mt-md-5" >
+                    <p class="product-card mt-0W"> <h4>{{ product.name }}</h4>
                     <strong class="lead mb-0 text-left font-weight-bold">${{ product.price }}</strong>
                     </p>
                     
@@ -54,7 +67,7 @@
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                        
-                            <div class="col-12">
+                            <div class="col-12 pl-0">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
@@ -81,25 +94,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col{% if s %}-12 mt-2{% endif %}" >
+                            <!-- <div class="col{% if s %}-12 mt-2{% endif %}" >
                                 {% if product_in_wishlist %}
-                                <a href="{% url 'delete_product_from_user_wish_list' product.id %}" class="btn btn-outline rounded-0 mt-5 w-100">
-                                    <span class="icon">
-                                        <i class="fas fa-heart fa-sm"></i>
-                                    </span>
-                                    <span class="text-uppercase">FAVOURITES</span>
-                                </a>
-                                {% else %}
-                                <a href="{% url 'add_product_to_user_wish_list' product.id %}" class="btn btn-outline rounded-0 mt-5 w-100">
-                                    <span class="icon">
-                                        <i class="far fa-heart fa-sm"></i>
-                                    </span>
-                                    <span class="text-uppercase">FAVOURITES</span>
-                                </a>
+                                        <small class="ml-3">
+                                            <a class="text-muted" href="{% url 'delete_product_from_user_wish_list' product.id %}"><i class="fas fa-heart fa-lg" style="color:rgb(190, 6, 6)"></i></a>
+                                        </small>
+                                        {% else %}
+                                        <small class="ml-3">
+                                            <a class="text-muted" href="{% url 'add_product_to_user_wish_list' product.id %}"><i class="far fa-heart fa-lg"></i></a>
+                                        </small>
                                 {% endif %}
-                            </div>
-                            <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <input type="submit" class="btn btn-outline-black rounded-0 mt-2 w-100" value="ADD TO CART">
+                            </div> -->
+                            <div class="col{% if s %}-12 mt-2{% endif %} pl-0">
+                                <input type="submit" class="btn btn-outline-black rounded-0 mt-2 w-50" value="ADD TO CART">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             
@@ -112,7 +119,8 @@
                     {% if user.is_authenticated and not current_user_review_flag %}
                     <div>
                         <div class="card-body">
-                            <h5>Leave a review:</h5>
+                            <p class="mb-0 product-card">Leave a review:</p>
+                            <!-- <h5>Leave a review:</h5> -->
                             <form method="post" action="{% url 'create_review' product.id %}" style="margin-top: 1.3em;">
                                 {{ review_form | crispy }}
                                 {% csrf_token %}
@@ -124,10 +132,11 @@
 
                     <div>
                         <div class="card-body">
-                            <h5>Customer reviews:</h5>
+                            <p class="mb-2 product-card">Customer reviews:</p>
+                            <!-- <h5>Customer reviews:</h5> -->
                             {% for review in reviews %}
                             <div class="comments" style="padding: 10px;">
-                                <p class="font-weight-bold">
+                                <p class="product-card">
                                     {{ review.created_by }}
                                     <span class=" text-muted font-weight-normal">
                                         {{ review.created_on }}
