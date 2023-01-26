@@ -44,36 +44,41 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
+
+                                <div class="product-container">
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                    <div class="circle">
+                                        {% if request.user.is_authenticated %}
+                                        {% if product.id in wishlist %}
+                                        <small class="ml-3">
+                                            <a class="text-muted" href="{% url 'delete_product_from_user_wish_list' product.id %}"><i class="fas fa-heart fa-lg" style="color:rgb(190, 6, 6)"></i></a>
+                                        </small>
+                                        {% else %}
+                                        <small class="ml-3">
+                                            <a class="text-muted" href="{% url 'add_product_to_user_wish_list' product.id %}"><i class="far fa-heart fa-lg"></i></a>
+                                        </small>
+                                        {% endif %}
+                                        {% endif %}
+                                    </div>
+                                 </div>
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
+                                <div class="card-body pb-0 pl-0 product-card">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="card-footer bg-white pt-0 pl-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            <p class="lead mb-0 text-left product-card product-card-price">${{ product.price }}</p>
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
-                                            {% endif %}
-                                            {% if request.user.is_authenticated %}
-                                            {% if product.id in wishlist %}
-                                            <small class="ml-3">
-                                                <a class="text-muted" href="{% url 'delete_product_from_user_wish_list' product.id %}"><i class="fas fa-heart fa-lg" style="color:rgb(177, 151, 159)"></i></a>
-                                            </small>
-                                            {% else %}
-                                            <small class="ml-3">
-                                                <a class="text-muted" href="{% url 'add_product_to_user_wish_list' product.id %}"><i class="far fa-heart fa-lg"></i></a>
-                                            </small>
-                                            {% endif %}
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
