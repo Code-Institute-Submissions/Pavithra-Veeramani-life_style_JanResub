@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.mail import send_mail
 from django.conf import settings
+from django.template.loader import render_to_string
 
 
 class Subscription(models.Model):
@@ -27,6 +28,7 @@ class Newsletter(models.Model):
 
     def send(self, request):
         contents = self.contents.read().decode('utf-8')
+        html_body = render_to_string(contents)
         subscriptions = Subscription.objects.filter()
         subscriptions_emails = []
         for subscription in subscriptions:
@@ -34,7 +36,7 @@ class Newsletter(models.Model):
         print('subscriptions_emails', subscriptions_emails)
         send_mail(
             self.subject,
-            contents,
+            html_body,
             settings.EMAIL_HOST_USER,
             subscriptions_emails
         )
