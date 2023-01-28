@@ -23,8 +23,8 @@ def profile(request):
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
 
-    total_points = 0 
-    total_available_points = 0 
+    total_points = 0
+    total_available_points = 0
     for order in orders:
         order_loyalty_points = order.loyaltypoints.all()
         for loyalty_points_rows in order_loyalty_points:
