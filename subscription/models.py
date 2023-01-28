@@ -27,7 +27,6 @@ class Newsletter(models.Model):
 
     def send(self, request):
         contents = self.contents.read().decode('utf-8')
-        html_body = re
         subscriptions = Subscription.objects.filter()
         subscriptions_emails = []
         for subscription in subscriptions:
