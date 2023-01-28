@@ -155,6 +155,11 @@ text-jet{
     text-transform: uppercase;
 }
 
+.mobile-logo-font {
+    text-transform: uppercase;
+    font-size: small;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -475,14 +480,8 @@ input[name='q']::placeholder{
       width: 95%;
       justify-content: center;
     }
-    #mc_embed_signup{
-        background:#fff; 
-        clear:left; 
-        font:14px Helvetica,Arial,sans-serif;  
-        width:300px;
-    }
     .small-win-height {
-        height: 300px;
+        height: 450px;
     }
   }
   /* Tablet Responsiveness Start */
@@ -493,12 +492,6 @@ input[name='q']::placeholder{
     }
     .small-win-height {
         height: 450px;
-    }
-    #mc_embed_signup{
-        background:#fff; 
-        clear:left; 
-        font:14px Helvetica,Arial,sans-serif;  
-        width:400px;
     }
   }
   
@@ -520,13 +513,6 @@ input[name='q']::placeholder{
       width: 70%;
       justify-content: center;
     }
-
-    #mc_embed_signup{
-        background:#fff; 
-        clear:left; 
-        font:14px Helvetica,Arial,sans-serif;  
-        width:500px;
-    }
   }
   
   /* Desktop Responsiveness Start */
@@ -543,12 +529,5 @@ input[name='q']::placeholder{
     .hero-outer{
       width: 70%;
       justify-content: center;
-    }
-
-    #mc_embed_signup{
-        background:#fff; 
-        clear:left; 
-        font:14px Helvetica,Arial,sans-serif;  
-        width:500px;
     }
   }
