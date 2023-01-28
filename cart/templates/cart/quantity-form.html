@@ -1,7 +1,7 @@
-<form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
+<form class="form update-form" id="update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
     {% csrf_token %}
     <div class="form-group">
-        <div class="input-group">
+        <div class="input-group w-75">
             <div class="input-group-prepend">
                 <button class="decrement-qty btn btn-sm btn-black rounded-0" 
                     data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
@@ -22,11 +22,20 @@
                     </span>
                 </button>
             </div>
+            <span class="update-link text-info pl-2 mt-2">
+                <small class="text-muted "><i class="fa fa-refresh" style="font-size:20px;"></i>
+                </small>
+            </span>
+            <a class="remove-item text-danger pl-2 mt-2 d-md-none" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+                <small class="text-muted"><i class="fa fa-trash-o" style="font-size:20px;"></i>
+                </small>
+            </a>
             {% if item.product.has_sizes %}
                 <input type="hidden" name="product_size" value="{{ item.size }}">
             {% endif %}
         </div>
     </div>
 </form>
-<a class="update-link text-info"><small>Update</small></a>
-<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
+
+
+<!-- <a class="update-link text-info"><small>Update</small></a> -->

@@ -233,7 +233,10 @@ GitHub projects was used as a project management tool. Kanban board was used to 
 ![User Stories](assets/readme/sprint_6.png)
 
 **Week 7**
-![User Stories](assets/readme/sprint_6.png)
+![User Stories](assets/readme/sprint_7.png)
+
+**Week 8**
+![User Stories](assets/readme/sprint_8.png)
 
 [Back to top ⇧](#LifeStyle)
 

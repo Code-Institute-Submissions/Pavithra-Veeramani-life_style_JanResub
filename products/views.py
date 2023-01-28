@@ -8,6 +8,8 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Brand
 from wishlist.models import WishList
 from .forms import ProductForm
+from reviews.forms import ReviewForm
+from reviews.models import Review
 
 
 def all_products(request):
@@ -80,9 +82,31 @@ def product_detail(request, product_id):
     """ A view to show individual product details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    # reviews = post.comments.filter(approved=True).order_by("-created_on")
+    reviews = Review.objects.filter(product=product)
+    current_user_review_flag = False
+    for review in reviews:
+        if review.created_by == request.user:
+            current_user_review_flag = True
+
+    product_in_wishlist = False
+
+    if not request.user.is_anonymous:
+        try:
+            wishlist = WishList.objects.get(user=request.user)
+            wishlist_products = [p.id for p in wishlist.products.all()]
+            for wl_prod in wishlist_products:
+                if wl_prod == product_id:
+                    product_in_wishlist = True
+        except WishList.DoesNotExist:
+            product_in_wishlist = False
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'current_user_review_flag': current_user_review_flag,
+        'product_in_wishlist': product_in_wishlist,
+        'review_form': ReviewForm()
     }
 
     return render(request, 'products/product_detail.html', context)

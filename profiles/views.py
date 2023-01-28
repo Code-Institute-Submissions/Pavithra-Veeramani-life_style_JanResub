@@ -23,10 +23,21 @@ def profile(request):
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
 
+    total_points = 0
+    total_available_points = 0
+    for order in orders:
+        order_loyalty_points = order.loyaltypoints.all()
+        for loyalty_points_rows in order_loyalty_points:
+            total_points = total_points + loyalty_points_rows.points
+            if (not loyalty_points_rows.redeemed_flag):
+                total_available_points = total_available_points + loyalty_points_rows.points
+
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
+        'loyalty_points': total_points,
+        'total_available_points': total_available_points,
         'on_profile_page': True
     }
 

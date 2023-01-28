@@ -29,5 +29,7 @@ urlpatterns = [
     path('profiles/', include('profiles.urls')),
     path('brands/', include('brands.urls')),
     path('wishlist/', include('wishlist.urls')),
+    path('reviews/', include('reviews.urls')),
+    path('subscribe/', include('subscription.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'life_style.views.handler404'

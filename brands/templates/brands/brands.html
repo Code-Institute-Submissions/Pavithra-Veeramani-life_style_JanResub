@@ -10,12 +10,25 @@
 {% endblock %}
 
 {% block content %}
-<br/>
-<div class="swin-height">
-    <ul class="list-group">
+
+<div class="container mt-1 mb-3">
+    <div class="row pl-4 product-card">
+        {% if brands %}
+        <p>{{ brands|length }} Brands Found.</p>
+        {% endif %}
+    </div>
+    <div class="row">
         {% for brand in brands %}
-            <li class="list-group-item text-center border-0"><a class="no-link" href="/products?brand={{brand.name}}">{{ brand.name}}</a></li>
+        <div class="col-md-4">
+            <div class="card p-3 mb-2 border-0">
+                <div >
+                    <a href="/products?brand={{brand.name}}"><img src="{{ MEDIA_URL }}{{brand.name}}.png" class="img-fluid rounded float-left" width="304" height="236" alt="{{brand.name}}"></a>
+                </div>
+            </div>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 </div>
+
 {% endblock %}
+
