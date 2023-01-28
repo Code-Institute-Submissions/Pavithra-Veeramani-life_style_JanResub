@@ -11,13 +11,13 @@
 
 {% block content %}
 
-<div class="container mt-1 mb-3">
+<div class="container mt-1 mb-3 prod-small-win-height">
     <div class="row pl-4 product-card">
         {% if brands %}
         <p>{{ brands|length }} Brands Found.</p>
         {% endif %}
     </div>
-    <div class="row">
+    <div class="row ">
         {% for brand in brands %}
         <div class="col-md-4">
             <div class="card p-3 mb-2 border-0">
