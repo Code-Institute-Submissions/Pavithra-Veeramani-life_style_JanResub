@@ -18,7 +18,9 @@
                 </div>
             </div>
         </form>
-    
+    </div>
+</li>
+{% if request.user.is_authenticated %}
 <li class="list-inline-item dropdown">
     <a class="text-header nav-link d-block d-lg-none" href="{% url 'products' %}?wishlist=" id="user-wishlist" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -27,6 +29,7 @@
         </div>
     </a>
 </li>
+{% endif %}
 <li class="list-inline-item dropdown">
     <a class="text-header nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">

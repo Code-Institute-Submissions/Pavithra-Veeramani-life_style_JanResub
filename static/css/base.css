@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Roboto:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
 html {
     height: 100%;
@@ -493,7 +492,7 @@ input[name='q']::placeholder{
       justify-content: center;
     }
     .small-win-height {
-        height: 300px;
+        height: 450px;
     }
     #mc_embed_signup{
         background:#fff; 
