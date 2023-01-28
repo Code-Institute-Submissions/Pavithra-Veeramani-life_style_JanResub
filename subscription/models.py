@@ -36,5 +36,5 @@ class Newsletter(models.Model):
             self.subject,
             contents,
             settings.EMAIL_HOST_USER,
-            [subscriptions_emails]
+            subscriptions_emails
         )
