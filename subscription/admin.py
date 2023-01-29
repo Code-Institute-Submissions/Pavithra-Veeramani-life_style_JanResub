@@ -7,7 +7,8 @@ def send_newsletter(modeladmin, request, queryset):
         newsletter.send(request)
 
 
-send_newsletter.short_description = "Send selected Newsletters to all subscribers"
+send_newsletter.short_description = "Send selected Newsletters \
+    to all subscribers"
 
 
 class SubscriptionAdmin(admin.ModelAdmin):

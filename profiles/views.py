@@ -30,7 +30,8 @@ def profile(request):
         for loyalty_points_rows in order_loyalty_points:
             total_points = total_points + loyalty_points_rows.points
             if (not loyalty_points_rows.redeemed_flag):
-                total_available_points = total_available_points + loyalty_points_rows.points
+                total_available_points = (
+                    total_available_points + loyalty_points_rows.points)
 
     template = 'profiles/profile.html'
     context = {
