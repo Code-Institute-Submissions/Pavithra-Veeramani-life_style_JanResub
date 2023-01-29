@@ -31,7 +31,6 @@ class Newsletter(models.Model):
         subscriptions_emails = []
         for subscription in subscriptions:
             subscriptions_emails.append(subscription.email)
-        print('subscriptions_emails', subscriptions_emails)
         send_mail(
             self.subject,
             contents,
