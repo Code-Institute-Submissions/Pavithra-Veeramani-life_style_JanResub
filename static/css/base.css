@@ -80,7 +80,7 @@ body {
 }
 
 footer {
-    background-color: #e6eeff;
+    background-color: #8a817c;
     color: white;
     font-size: 14px;
 }
@@ -204,20 +204,10 @@ text-jet{
     color: #000 !important;
 } 
 
-/* .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #e9c46a;
-    color: white;
-} */
 
 .text-black {
     color: #000 !important;
-    /* flex-direction: column;
-    padding-left: 20px; */
+   
 }
 
 .border-black {
@@ -335,14 +325,7 @@ input[name='q']::placeholder{
     font-size: 14px;
     margin-top: 1rem;
 }
-/* 
-.allauth-form-inner-content a:not(.btn) {
-    color: #A99166;
-} */
-/* 
-.allauth-form-inner-content input {
-    border-color: #A99166;
-} */
+
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
@@ -351,21 +334,6 @@ input[name='q']::placeholder{
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
-
-/* .allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-    background: #000;
-    color: white !important;
-    border: 1px solid black;
-    padding: 8px;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {
-    background: white;
-    color: #000 !important;
-} */
-
 
 /* Product Form */
 
