@@ -18,19 +18,17 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <i class="fa fa-check-circle" style="font-size:48px;color:rgb(48, 216, 15)"></i>
-                <h3 class="logo-font mb-4">Thank You for your Order </h3>
-                <p class="text-black">A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                <h3 class="logo-font mb-4">Order Details</h3>
             </div>
         </div>
         {% include "checkout/order_details.html" %}
         <div class="row">
 			<div class="col-12 col-lg-7 text-right">
-				<a href="{% url 'products' %}?category=New_arrivals,Deals,Clearance" class="btn btn-black rounded-0 my-2">
+                <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
 					<span class="icon mr-2">
-						<i class="fas fa-gifts"></i>
+						<i class="fas fa-angle-left"></i>
 					</span>
-					<span class="text-uppercase">Now check out the latest deals!</span>
+					<span class="text-uppercase">Back to Profile</span>
 				</a>
 			</div>
 		</div>

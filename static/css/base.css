@@ -16,6 +16,13 @@ body {
     font-weight: 500;
     color: rgb(10, 10, 10);
 }
+
+.order-card-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+}
+
 .product-card-price{
     font-weight: 600;
 }
