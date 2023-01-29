@@ -32,5 +32,5 @@ class UserProfileForm(forms.ModelForm):
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
                 self.fields[field].widget.attrs[
-                    'class'] = 'profile-form rounded-0 profile-form-input'
+                    'class'] = 'editable-form rounded-0'
                 self.fields[field].label = False
