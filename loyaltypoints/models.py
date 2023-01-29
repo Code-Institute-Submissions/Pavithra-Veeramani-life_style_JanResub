@@ -9,7 +9,8 @@ class LoyaltyPoints(models.Model):
     delivery information and order history
     """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='loyaltypoints')
+    order = models.ForeignKey(
+        Order, on_delete=models.CASCADE, related_name='loyaltypoints')
     points = models.IntegerField(blank=False, null=False)
     redeemed_flag = models.BooleanField(default=False)
 

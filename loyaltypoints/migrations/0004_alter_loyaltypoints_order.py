@@ -8,13 +8,16 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('checkout', '0005_order_user_profile'),
-        ('loyaltypoints', '0003_rename_redeemedflag_loyaltypoints_redeemed_flag'),
+        ('loyaltypoints',
+            '0003_rename_redeemedflag_loyaltypoints_redeemed_flag'),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='loyaltypoints',
             name='order',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='loyaltypoints', to='checkout.order'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='loyaltypoints', to='checkout.order'),
         ),
     ]

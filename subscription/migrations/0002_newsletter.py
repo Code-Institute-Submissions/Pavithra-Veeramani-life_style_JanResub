@@ -13,9 +13,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Newsletter',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
                 ('subject', models.CharField(max_length=150)),
-                ('contents', models.FileField(upload_to='uploaded_newsletters/')),
+                ('contents', models.FileField(
+                    upload_to='uploaded_newsletters/')),
                 ('created_on', models.DateTimeField(auto_now_add=True)),
             ],
         ),

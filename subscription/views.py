@@ -1,9 +1,7 @@
-from django.shortcuts import render
 from django.contrib import messages
-from django.views import generic, View
+from django.views import View
 from django.http import HttpResponseRedirect
 from .models import Subscription
-from .forms import SubscriptionForm
 
 
 class SubscriptionView(View):
@@ -26,6 +24,7 @@ class SubscriptionView(View):
             else:
                 sub = Subscription.create(email)
                 sub.save()
-                messages.success(self.request, 'Subscription created successfully.')
+                messages.success(self.request, 'Subscription created \
+                    successfully.')
 
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
