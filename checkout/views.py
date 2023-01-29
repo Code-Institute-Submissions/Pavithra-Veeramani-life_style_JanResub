@@ -150,9 +150,11 @@ def checkout_success(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     if request.user.is_authenticated:
+        # Update the customer's loyalty points
         points = round(order.grand_total * 1)
         loyaltyPoints = LoyaltyPoints.create(request.user, order, points)
         loyaltyPoints.save()
+        
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
