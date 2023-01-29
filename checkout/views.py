@@ -69,18 +69,10 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't found in our database. "
+                        "One of the products in your cart wasn't found \
+                        in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
@@ -154,7 +146,7 @@ def checkout_success(request, order_number):
         points = round(order.grand_total * 1)
         loyaltyPoints = LoyaltyPoints.create(request.user, order, points)
         loyaltyPoints.save()
-        
+
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the order
         order.user_profile = profile
