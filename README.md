@@ -269,11 +269,12 @@ The database model has been designed using [drawsql](https://drawsql.app/). The 
 
 Page | Desktop Version | Mobile Version
 --- | --- | ---
-Home | ![Desktop home wireframe image](assets/wireframes/home_page_desktop.png) | ![Mobile home wireframe image](assets/wireframes/home_page_mobile.png)
-Products | ![Desktop products wireframe image](assets/wireframes/products_page_desktop.png) | ![Mobile products wireframe image](assets/wireframes/products_page_mobile.png)
-Product Details | ![Desktop product details wireframe image](assets/wireframes/product_details_desktop.png) | ![Mobile product details wireframe image](assets/wireframes/product_details_page_mobile.png)
+Home | ![Desktop home wireframe image](assets/wireframes/homepage_desktop.png) | ![Mobile home wireframe image](assets/wireframes/homepage_mobile.png)
+Products | ![Desktop products wireframe image](assets/wireframes/products_desktop.png) | ![Mobile products wireframe image](assets/wireframes/products_mobile.png)
+Product Details | ![Desktop product details wireframe image](assets/wireframes/products_details_desktop.png) | ![Mobile product details wireframe image](assets/wireframes/products_details_page_mobile.png)
 Shopping cart | ![Desktop shopping cart wireframe image](assets/wireframes/shopping_bag_desktop.png) | ![Mobile shopping cart wireframe image](assets/wireframes/shopping_bag_mobile.png)
 Checkout | ![Desktop checkout wireframe image](assets/wireframes/checkout_desktop.png) | ![Mobile checkout wireframe image](assets/wireframes/checkout_mobile.png)
+My profile | ![Desktop my profile wireframe image](assets/wireframes/myprofile_desktop.png) | ![Mobile checkout wireframe image](assets/wireframes/myprofile_mobile.png)
 
 [Back to top ⇧](#LifeStyle)
 
