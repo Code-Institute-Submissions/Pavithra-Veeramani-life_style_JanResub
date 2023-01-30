@@ -47,15 +47,16 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
     6. [Cloud Storage](#cloud-storage)
     7. [Tools and Programs](#tools-and-programs)
 5. [Testing](#testing)
-6. [Deployment](#deployment)
+6. [Resubmission](#resubmission)
+7. [Deployment](#deployment)
     1. [How To Use This Project](#how-to-use-this-project)  
     2. [Deployment to Heroku](#deployment-to-heroku)   
     3. [AWS Bucket Creation](#aws-bucket-creation)  
     4. [Connect Django to AWS Bucket](#connect-django-to-aws-bucket)
-7. [Finished Product](#finished-product)
-8. [Credits](#credits)
-9. [Known Bugs](#known-bugs)
-10. [Acknowledgements](#acknowledgements)
+8. [Finished Product](#finished-product)
+9. [Credits](#credits)
+10. [Known Bugs](#known-bugs)
+11. [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -282,9 +283,9 @@ My profile | ![Desktop my profile wireframe image](assets/wireframes/myprofile_d
 
 #### Color Scheme
 
- #2A9D8F is used in header, footer and icons which have attractive and pleasant appearance overall.
+ #8a817c is used in footer which have attractive and pleasant appearance overall.
 
- #E9C46A is a tints of golden sand which is used for buttons throughout the website.
+ #000000 which is used for buttons throughout the website.
 
 
 #### Typography
@@ -366,8 +367,6 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Links to edit and remove are available for each product.
 
-* User can submit their reviews using the textarea provided. 
-
 
 ### Product Details Page
 
@@ -382,6 +381,8 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 * An "Add to cart" button is available to add the desired quantity of the product to the shopping cart.
 
 * Provide edit and delete link for the admin users.
+
+* User can submit their reviews using the textarea provided. 
 
 ### Products Admin
 
@@ -407,7 +408,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Display the current total cost including the cart total and delivery costs.
 
-* Provide a "Keep Shopping" button to go back to the products.
+* Provide a "Continue Shopping" button to go back to the products.
 
 * A button to checkout is provided for the shopper to finish the purchase.
 
@@ -445,19 +446,21 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Show a list of historical orders.
 
+* Shows available loyalty points.
+
 ### Wishlist Page
 
 ![LifeStyle success page image](assets/readme/wishlist_page.png)
 
 * Display the registered shopper's favorites products and displays them in Products page.
 
-* A remove button is present for the registered shopper to remove the products they no longer wants to keep on the list.
+* Clicking the heart symbol will add and remove the products fron the wishlist.
 
 ### Brands Page
 
 ![LifeStyle success page image](assets/readme/brands_page.png)
 
-* Display all the brands fom the products available in the website.
+* Display all the brands from the products available in the website.
 
 ### Accounts Pages
 
@@ -716,6 +719,32 @@ Loyalty points | Loyalty points is added to the purchase made by the user | Pass
 Scenario | Issue |
 --- | --- |
 Payment Confirmation | Confirmation email is not sent out to the customer's email address |
+
+### Resubmission
+
+Content | Approach | Status
+| :--- | ---: | :---:
+
+Issues in navigation are present.           fghghh 
+A majority of the text is hidden behind     hhghg
+the footer on the email verification page
+and the sign-up page fields overlap the  
+footer significantly on mobile screens.  
+
+Inadequate or zero customization of the 
+boilerplate Django model taught on the course
+
+Missing adequate UX design leads to a 
+poor experience at the front-end.
+
+Email verification page is difficult to use,
+ making registration of new users difficult|
+
+Code does not pass through validation tools.
+
+User has to struggle to keep control of their 
+interaction with the application 
+
 
 ## Code Validation
 
