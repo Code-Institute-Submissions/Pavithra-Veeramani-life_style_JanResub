@@ -761,6 +761,7 @@ View Loyalty points | Total available Loyalty points are shown in User profile p
 Scenario | Issue |
 --- | --- |
 Payment Confirmation | Confirmation email is not sent out to the customer's email address |
+Footer position for tablets| The footer is not at the bottom of the page.|
 Product Details| When Heart icon in the products image is clicked, 'Product added from Wishlist' message is shown along with the Shopping cart information|
 Python Validation | Line too long violation in /checkout/webhook_handler.py is not fixed. |
 
