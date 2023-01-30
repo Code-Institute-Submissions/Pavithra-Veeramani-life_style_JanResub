@@ -372,9 +372,11 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ![LifeStyle product details image](assets/readme/product_details.png)
 
-* The products navigation bar is present in case the shopper wants to go back to the products.
+* Headers and Navigation bar are displayed 
 
 * Provide a larger image of the product and display its detailed information.
+
+* The Description is shown in a bootstrap accordion.
 
 * Allow the user to select the quantity of products to be added to the shopping cart.
 
@@ -382,7 +384,9 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Provide edit and delete link for the admin users.
 
-* User can submit their reviews using the textarea provided. 
+* User can submit their reviews using the textarea provided.
+
+* The heart icon is embedded inside the product image so that the user can use it to add the current product to their wishlist.
 
 ### Products Admin
 
@@ -705,20 +709,37 @@ Element | Expected Outcome | Pass/Fail |
 Content | User can enter their reviews in the textarea provided | Pass |
 Submit| Click the submit button to submit the review | Pass |
 
-#### Subscription/Newsletter
+#### Subscription
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
-E-mail |Newsletter is sent to the subscribed users| Pass |
+Create Subscription |Entered email id is saved in the Subscription model| Pass |
+Duplicate Subscription |Error message saying entered email is already subscribed is shown| Pass |
+
+#### Newsletter
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Create Newsletter|A newsletter is successfully saved in the model with entered Subject and HTML| Pass |
+View Newletter|Admin is able to see the newsletters in the dropdown| Pass |
+Send Newletter|Admin is able to selct the newsletters and send news letters to all Subscribers| Pass |
+Newletter Email |Email is sent out to all Subscribers| Pass |
 
 #### Loyalty Points
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
-Loyalty points | Loyalty points is added to the purchase made by the user | Pass |
+Create Loyalty points | When Checkout is success, Loyalty points are added to the user's order | Pass |
+View Loyalty points | Total available Loyalty points are shown in User profile page | Pass |
+
 
 #### Known Issues
 Scenario | Issue |
 --- | --- |
 Payment Confirmation | Confirmation email is not sent out to the customer's email address |
+Product Details| When Heart icon in the products image is clicked, 'Product added from Wishlist' message is shown along with the Shopping cart information|
+
+#### Future Enhancements
+Scenario | Issue |
+--- | --- |
+Loyalty points | A Redeem functionality to help customers use their accumulated points|
 
 ### Resubmission
 
