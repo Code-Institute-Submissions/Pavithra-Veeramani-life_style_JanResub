@@ -556,6 +556,8 @@ Newsletter Email | Allows the Admin to send a newsletter in an email through Adm
 
 * [Git](https://git-scm.com)  
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub. 
+    * A Tag 'submission-17-12-2022' was created on the main branch that has the project's first submission
+    * The resubmission work was done on 'resubmission' branch and then merged to main branch towards the end of development.
 
 * [GitPod](https://gitpod.io/)
      * GitPod was used for writing code, committing, and then pushing to GitHub.
@@ -777,10 +779,10 @@ interaction with the application | dfsdfsdf
 
 ### HTML
 
-* No errors were returned when passing through the [W3C Markup Validator](https://validator.w3.org/) validator 
+* [W3C Markup Validator](https://validator.w3.org/) for HTML validation
 
 ### CSS
-* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) found no errors on my CSS files.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) found no errors on base.css file.
 
 ### Python
 
