@@ -416,7 +416,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Display all products currently on the shopping cart and their information.
 
-* Allow the user to update the product quantity or remove the product from the shopping cart.
+* Allow the user to update the product quantity or remove the product from the shopping cart using the icons provided.
 
 * Display the current total cost including the cart total and delivery costs.
 
@@ -761,7 +761,7 @@ View Loyalty points | Total available Loyalty points are shown in User profile p
 Scenario | Issue |
 --- | --- |
 Payment Confirmation | Confirmation email is not sent out to the customer's email address |
-Footer position for tablets| The footer is not at the bottom of the page.|
+Footer position for tablets| There is a small gap between footer and bottom of page in the home screen in tablet devices.|
 Product Details| When Heart icon in the products image is clicked, 'Product added from Wishlist' message is shown along with the Shopping cart information|
 Python Validation | Line too long violation in /checkout/webhook_handler.py is not fixed. |
 
@@ -779,9 +779,7 @@ Inadequate or zero customization of the boilerplate Django model taught on the c
 Missing adequate UX design leads to a poor experience at the front-end. | Code modified| Fixed|
 Email verification page is difficult to use making registration of new users difficult| Screen size increased | Fixed |
 Code does not pass through validation tools. | Used flake8 to fix. | Fixed|
-
-User has to struggle to keep control of their 
-interaction with the application | dfsdfsdf
+Custom Models | New models created are Review, Subscription, Newsletter, Loyalty points | Fixed|
 
 
 ## Code Validation
