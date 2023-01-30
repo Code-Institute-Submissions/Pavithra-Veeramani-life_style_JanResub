@@ -350,7 +350,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 
 ### Products Page
-![LifeStyle products image](assets/readme/products_page.png)
+![LifeStyle products image](assets/readme/products_1.png)
 
 * Display all the products currently available or filtered on a specific category.
 
@@ -366,18 +366,18 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Links to edit and remove are available for each product.
 
+* User can submit their reviews using the textarea provided. 
+
 
 ### Product Details Page
 
-![LifeStyle product details image](assets/readme/products_detail.png)
+![LifeStyle product details image](assets/readme/product_details.png)
 
 * The products navigation bar is present in case the shopper wants to go back to the products.
 
 * Provide a larger image of the product and display its detailed information.
 
 * Allow the user to select the quantity of products to be added to the shopping cart.
-
-* Provide a "Continue Shopping" button to go back to the products list page.
 
 * An "Add to cart" button is available to add the desired quantity of the product to the shopping cart.
 
@@ -397,7 +397,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ### Shopping cart Page
 
-![LifeStyle shopping cart page image](assets/readme/shopping_bag.png)
+![LifeStyle shopping cart page image](assets/readme/shopping_cart.png)
 
 * A notification message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
 
@@ -431,7 +431,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ### Checkout Success Page
 
-![LifeStyle success page image](assets/readme/checkout_summary.png)
+![LifeStyle success page image](assets/readme/checkout_success.png)
 
 * Display the order and shopper information to allow the shopper to confirm that the information provided is correct.
 
@@ -439,7 +439,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ### My Profile Page
 
-![LifeStyle success page image](assets/readme/profile_page.png)
+![LifeStyle success page image](assets/readme/myprofile_page.png)
 
 * Provide a form for the registered shopper to update their information.
 
@@ -695,6 +695,22 @@ Remove | Clicking the heart icon will remove the product from the wishlist. | Pa
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
 Brands link | Clicking the brands displays the various brands | Pass |
+
+#### Reviews
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Content | User can enter their reviews in the textarea provided | Pass |
+Submit| Click the submit button to submit the review | Pass |
+
+#### Subscription/Newsletter
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+E-mail |Newsletter is sent to the subscribed users| Pass |
+
+#### Loyalty Points
+Element | Expected Outcome | Pass/Fail |
+--- | --- | --- |
+Loyalty points | Loyalty points is added to the purchase made by the user | Pass |
 
 #### Known Issues
 Scenario | Issue |
