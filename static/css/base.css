@@ -470,10 +470,10 @@ input[name='q']::placeholder{
       justify-content: center;
     }
     .small-win-height {
-        height: 700px;
+        height: 675px;
     }
     .prod-small-win-height {
-        min-height: 700px;
+        min-height: 675px;
     }
   }
   
