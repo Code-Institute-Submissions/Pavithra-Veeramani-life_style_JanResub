@@ -55,7 +55,7 @@ LifeStyle have a great range of homewares and products, with many beautiful orna
     4. [Connect Django to AWS Bucket](#connect-django-to-aws-bucket)
 8. [Finished Product](#finished-product)
 9. [Credits](#credits)
-10. [Known Bugs](#known-bugs)
+10. [Known Issues](#known-issues)
 11. [Acknowledgements](#acknowledgements)
 
 ***
@@ -474,6 +474,22 @@ Sign Up | Allow the shopper to sign up an account for the website.
 Sign In | Allow the registered shopper to sign in with their account. 
 Sign Out | Allow the registered shopper to sign out from their account.
 
+### Newsletter Subscription in Footer
+
+![LifeStyle success page image](assets/readme/subscription.png)
+
+### Newsletter Email Functionality
+
+![LifeStyle success page image](assets/readme/newsletter-1.png)
+![LifeStyle success page image](assets/readme/newsletter-2.png)
+![LifeStyle success page image](assets/readme/newsletter-3.png)
+![LifeStyle success page image](assets/readme/newsletter-4.png)
+
+Page | Purpose | 
+--- | --- | 
+Newsletter Email | Allows the Admin to send a newsletter in an email through Admin page. Admin needs to upload a html file containing the body of email.
+
+
 ### 404 Error Page
 
 * Provided information to the shopper in case the address entered cannot be found.
@@ -735,6 +751,7 @@ Scenario | Issue |
 --- | --- |
 Payment Confirmation | Confirmation email is not sent out to the customer's email address |
 Product Details| When Heart icon in the products image is clicked, 'Product added from Wishlist' message is shown along with the Shopping cart information|
+Python Validation | Line too long violation in /checkout/webhook_handler.py is not fixed. |
 
 #### Future Enhancements
 Scenario | Issue |
@@ -743,28 +760,16 @@ Loyalty points | A Redeem functionality to help customers use their accumulated 
 
 ### Resubmission
 
-Content | Approach | Status
-| :--- | ---: | :---:
-
-Issues in navigation are present.           fghghh 
-A majority of the text is hidden behind     hhghg
-the footer on the email verification page
-and the sign-up page fields overlap the  
-footer significantly on mobile screens.  
-
-Inadequate or zero customization of the 
-boilerplate Django model taught on the course
-
-Missing adequate UX design leads to a 
-poor experience at the front-end.
-
-Email verification page is difficult to use,
- making registration of new users difficult|
-
-Code does not pass through validation tools.
+Comment | Fix Approach | Status
+--- | --- | --- |
+Issues in navigation are present. A majority of the text is hidden behind <br> the footer on the email verification page and the sign-up page fields overlap <br>the footer significantly on mobile screens.  | Responsiveness handled in CSS by setting minimum window height | Fixed |
+Inadequate or zero customization of the boilerplate Django model taught on the course | Code modified |Fixed |
+Missing adequate UX design leads to a poor experience at the front-end. | Code modified| Fixed|
+Email verification page is difficult to use making registration of new users difficult| Screen size increased | Fixed |
+Code does not pass through validation tools. | Used flake8 to fix. | Fixed|
 
 User has to struggle to keep control of their 
-interaction with the application 
+interaction with the application | dfsdfsdf
 
 
 ## Code Validation
@@ -772,7 +777,7 @@ interaction with the application
 
 ### HTML
 
-* No errors were returned when passing through the [W3C Markup Validator](https://validator.w3.org/) validator. 
+* No errors were returned when passing through the [W3C Markup Validator](https://validator.w3.org/) validator 
 
 ### CSS
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) found no errors on my CSS files.
@@ -963,6 +968,8 @@ This project is deployed on Heroku for production, with all static and media fil
      [Bootstrap](https://getbootstrap.com/) were referenced for the bootstrap ideas. 
 
      [Django](https://docs.djangoproject.com/en/4.1/) was referenced for Django.
+
+     [Blog](https://www.twilio.com/blog/build-email-newsletter-django-twilio-sendgrid) was referenced for Newsletter email functionality.
 
 
    ## Acknowledgements  
