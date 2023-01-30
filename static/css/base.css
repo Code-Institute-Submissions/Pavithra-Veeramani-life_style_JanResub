@@ -459,6 +459,9 @@ input[name='q']::placeholder{
     .small-win-height {
         height: 450px;
     }
+    .prod-small-win-height {
+        min-height: 500px;
+    }
   }
   /* Tablet Responsiveness Start */
   @media only screen and (min-width: 600px) {
@@ -467,7 +470,10 @@ input[name='q']::placeholder{
       justify-content: center;
     }
     .small-win-height {
-        height: 450px;
+        height: 600px;
+    }
+    .prod-small-win-height {
+        min-height: 500px;
     }
   }
   
