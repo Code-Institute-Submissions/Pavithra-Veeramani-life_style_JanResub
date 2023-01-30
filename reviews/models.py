@@ -4,6 +4,9 @@ from products.models import Product
 
 
 class Review(models.Model):
+    """
+    Model to represent a Product review
+    """
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name='reviews')
     content = models.TextField(verbose_name="")

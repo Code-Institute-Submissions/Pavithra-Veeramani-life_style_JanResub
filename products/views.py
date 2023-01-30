@@ -14,7 +14,10 @@ from reviews.models import Review
 
 def all_products(request):
 
-    """ A view to show all products, including sorting and search queries """
+    """
+    A view to show all products, including sorting and search queries
+    Also filters products based on category, brand, wishlist
+    """
 
     products = Product.objects.all()
     query = None

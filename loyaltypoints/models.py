@@ -5,8 +5,7 @@ from django.contrib.auth.models import User
 
 class LoyaltyPoints(models.Model):
     """
-    A user profile model for maintaining default
-    delivery information and order history
+    A model to represent a customer orders Loyalty points
     """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     order = models.ForeignKey(

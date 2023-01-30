@@ -4,7 +4,9 @@ from django.conf import settings
 
 
 class Subscription(models.Model):
-
+    """
+    Model to represent a Customer's Newsletter Subscription
+    """
     email = models.EmailField()
     created_on = models.DateTimeField(auto_now_add=True)
 
@@ -18,6 +20,9 @@ class Subscription(models.Model):
 
 
 class Newsletter(models.Model):
+    """
+    Model to represent a Newsletter
+    """
     subject = models.CharField(max_length=150)
     contents = models.FileField(upload_to='uploaded_newsletters/')
     created_on = models.DateTimeField(auto_now_add=True)

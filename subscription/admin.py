@@ -19,6 +19,9 @@ class SubscriptionAdmin(admin.ModelAdmin):
 
 
 class NewsletterAdmin(admin.ModelAdmin):
+    """
+    This action is called when the admin Selects send newsletter in Admin page
+    """
     actions = [send_newsletter]
 
 

@@ -4,7 +4,9 @@ from django.db import models
 
 
 class Category(models.Model):
-
+    """
+    Model to represent a Product Category
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -19,7 +21,9 @@ class Category(models.Model):
 
 
 class Brand(models.Model):
-
+    """
+    Model to represent a Brand
+    """
     class Meta:
         verbose_name_plural = 'Brands'
 
@@ -34,6 +38,9 @@ class Brand(models.Model):
 
 
 class Product(models.Model):
+    """
+    Model to represent a Product
+    """
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)
     brand = models.ForeignKey(
