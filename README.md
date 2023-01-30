@@ -371,6 +371,7 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 ### Product Details Page
 
 ![LifeStyle product details image](assets/readme/product_details.png)
+![LifeStyle product details image](assets/readme/product_details-2.png)
 
 * Headers and Navigation bar are displayed 
 
@@ -384,9 +385,16 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 * Provide edit and delete link for the admin users.
 
+* The heart icon is embedded inside the product image so that the user can use it to add the current product to their wishlist.
+
+### Product Reviews
+
 * User can submit their reviews using the textarea provided.
 
-* The heart icon is embedded inside the product image so that the user can use it to add the current product to their wishlist.
+* A User can only enter one review per product.
+
+* All User reviews are displayed in chronological order.
+
 
 ### Products Admin
 
@@ -724,8 +732,9 @@ Brands link | Clicking the brands displays the various brands | Pass |
 #### Reviews
 Element | Expected Outcome | Pass/Fail |
 --- | --- | --- |
-Content | User can enter their reviews in the textarea provided | Pass |
-Submit| Click the submit button to submit the review | Pass |
+Create | On submitting a review, the content is successfully saved| Pass |
+Duplicate Review| User cannot create more than one review and the textarea will not be visible| Pass |
+Access| Only logged in users can submit a review | Pass |
 
 #### Subscription
 Element | Expected Outcome | Pass/Fail |
