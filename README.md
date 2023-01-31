@@ -5,6 +5,8 @@ At LifeStyle we specialise in providing all aspects of homewares and want to mak
 
 LifeStyle have a great range of homewares and products, with many beautiful ornaments and items of home décor, and you’re sure to find something beautiful. We have homewares that can suit any home, and we always want to make your home more beautiful and somewhere special that is truly your own.
 
+Visit the deployed website [here](https://life-style1.herokuapp.com)
+
 ## Table of Contents
 
 1. [User Experience (UX)](#user-experience-ux)
@@ -272,7 +274,7 @@ Page | Desktop Version | Mobile Version
 --- | --- | ---
 Home | ![Desktop home wireframe image](assets/wireframes/homepage_desktop.png) | ![Mobile home wireframe image](assets/wireframes/homepage_mobile.png)
 Products | ![Desktop products wireframe image](assets/wireframes/products_desktop.png) | ![Mobile products wireframe image](assets/wireframes/products_mobile.png)
-Product Details | ![Desktop product details wireframe image](assets/wireframes/products_details_desktop.png) | ![Mobile product details wireframe image](assets/wireframes/products_details_page_mobile.png)
+Product Details | ![Desktop product details wireframe image](assets/wireframes/product_details_desktop.png) | ![Mobile product details wireframe image](assets/wireframes/product_details_page_mobile.png)
 Shopping cart | ![Desktop shopping cart wireframe image](assets/wireframes/shopping_bag_desktop.png) | ![Mobile shopping cart wireframe image](assets/wireframes/shopping_bag_mobile.png)
 Checkout | ![Desktop checkout wireframe image](assets/wireframes/checkout_desktop.png) | ![Mobile checkout wireframe image](assets/wireframes/checkout_mobile.png)
 My profile | ![Desktop my profile wireframe image](assets/wireframes/myprofile_desktop.png) | ![Mobile checkout wireframe image](assets/wireframes/myprofile_mobile.png)
@@ -464,9 +466,9 @@ See the live Facebook Business page [here](https://www.facebook.com/profile.php?
 
 ![LifeStyle success page image](assets/readme/wishlist_page.png)
 
-* Display the registered shopper's favorites products and displays them in Products page.
+* Display the registered shopper's favorite products and displays them in Products page.
 
-* Clicking the heart symbol will add and remove the products fron the wishlist.
+* Clicking the heart symbol will add and remove the products from the wishlist.
 
 ### Brands Page
 
@@ -525,7 +527,7 @@ Newsletter Email | Allows the Admin to send a newsletter in an email through Adm
    
 * [jQuery 3.6.0](https://jquery.com/) was used as a JavaScript library to help writing less JavaScript code. 
 
-* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used throughout the website to help with styling and responsiveness.
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) was used throughout the website to help with styling and responsiveness.
 
 * [Google Fonts](https://fonts.google.com) was used to import the font into the html file, and were used on all parts of the site.
 
@@ -571,7 +573,7 @@ Newsletter Email | Allows the Admin to send a newsletter in an email through Adm
      * GitPod was used for writing code, committing, and then pushing to GitHub.
 
 * [GitHub](https://github.com)  
-   GitHub was used to store the projects code after being pushed from Git. 
+     * GitHub was used to store the projects code after being pushed from Git. 
 
 * [Heroku](https://www.heroku.com)   
     * Heroku was used to deploy the website.
